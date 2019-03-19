@@ -1,11 +1,122 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>React boilerplate</title>
+    <!-- Google result text-->
+    <title>Augustin Cousin</title>
+    <!-- Google result description-->
+    <meta name="description" content="Augustin Cousin's website">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Augustin Cousin</title>
+
+    <!-- <link rel="stylesheet" href="cv.css"> -->
+    <!-- <link rel="stylesheet" media="screen and (max-width: 640px)" href="smallscreen.css" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
   </head>
-  <body>
-    <div id="root"></div>
+
+  <body id="scroll">
+      <div class="banner" id="banner">
+          <ul id="scene"  class="scene">
+            <li class="layer2" data-depth="0.15"><div class="layer"></div></li>
+            <li class="layer3" data-depth="0.2"><div class="layer"></div></li>
+            <li class="layer4" data-depth="0.1"><div class="layer"></div></li>
+            <li class="bulle" data-depth="0.05"><div class="layer"></div></li>
+            <li class="astro2" data-depth="0"></li>
+            <li class="name" data-depth="0.3"></li>
+          </ul>
+      </div>
+      <div class="first-card" id="first-card">
+        <ul id="scene-skills"  class="scene">
+            <li class="layer2" data-depth="0.15"><div class="layer"></div></li>
+            <li class="layer3" data-depth="0.2"><div class="layer"></div></li>
+            <li class="layer4" data-depth="0.1"><div class="layer"></div></li>
+            <li class="astro" data-depth="0"><div class="layer"></div></li>
+            <li class="layer" data-depth="0.05" style="width: 56%; margin: auto; right: 0%">
+              <!-- <div class="skills-description"> -->
+                <div class="about">
+                  <div class="avatar-icon">
+                    <img src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1552989782/augustin_cousin.jpg" alt="Augustin Cousin  augustincousin.pro@gmail.com">
+                  </div>
+                  <div class="my-description">
+                    <h3>Développeur Full Stack Freelance</h3><br>
+                    <p class="text-animated">Ingénieur aéronautique de formation, j’ai élargi mon éventail de compétances avec la formation <strong>@LeWagon</strong>.</p>
+                    <p class="text-animated">Au cours de cette formation intensive, j'ai appris à développer des applications web complexes, en utilisant des technologies innovantes.</p>
+                    <p class="text-animated">J'apprends par ailleurs, à en découvrir de nouvelles: Parallax.js, React.js ou encore Node.js.</p>
+                    <p class="text-animated">Je suis à l'aise avec le Back-end, mais je prends également beaucoup de plaisir à intégrer des sites et à travailler sur le design graphique.</p>
+                  </div>
+                    <hr class="hr">
+                  <div class="wagon-batch">
+                   Proudly did <strong>Batch #201 - Paris</strong> 🇫🇷
+                  </div>
+                </div>
+              <!-- </div> -->
+          </li>
+          </ul>
+      </div>
+      <div class="second-card" id="second-card">
+        <div class="skills-description">
+          <div class="my-skills" id="my-skills">
+            <div class="skills-packages-1" id="skills-packages-1">
+              <div class="skills-card"><i class="devicon-css3-plain-wordmark colored"></i></div>
+              <div class="skills-card"><i class="devicon-html5-plain-wordmark colored"></i></div>
+              <div class="skills-card"><i class="devicon-react-original-wordmark colored"></i></div>
+              <div class="skills-card"><i class="devicon-jquery-plain-wordmark colored"></i></div>
+              <div class="skills-card"><i class="devicon-bootstrap-plain-wordmark colored"></i></div>
+            </div>
+            <div class="skills-packages-2" id="skills-packages-2">
+              <div class="skills-card"><i class="devicon-ruby-plain-wordmark colored"></i></div>
+              <div class="skills-card"><i class="devicon-rails-plain-wordmark colored"></i></div>
+              <div class="skills-card"><i class="devicon-python-plain-wordmark colored"></i></div>
+              <div class="skills-card"><i class="devicon-github-plain-wordmark"></i></div>
+            </div>
+          </div>
+            <div class="skills-selector">
+              <div id="circleLeft" class="selector-choice">
+              <i onClick="scrolledLeft(myRadarChart)" id="arrow-fixed-left" class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></div>
+              <div id="circleRight">
+              <i onClick="scrollRight(myRadarChart)" id="arrow-fixed-right" class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></div>
+            </div>
+        </div>
+
+        <div class="chart" id="chart-container">
+           <canvas id="myChart"></canvas>
+        </div>
+      </div>
+       <div class="widget">
+        <div id="widget-container">
+          <div id="widget-mail" class="widget-mail">
+            <div class="content-mail" id="mail"><span><strong>augustincousin.pro@gmail.com</strong></span></div>
+          </div>
+          <div id="widget-phone" class="widget-phone">
+            <div class="content-phone"><span><strong>06.68.28.98.06</strong></span></div>
+          </div>
+          <div id="widget-cv" class="widget-cv">
+            <div class="content-cv"><span style="width: 100px !important"> <a href="https://augustin75009.github.io/cv-html/" target="_blank" style="text-decoration: none; color: black"><strong>CV</strong></a></span></div>
+          </div>
+        </div>
+          <div id="widget-close" class="widget-close">
+            <div class="content-close" id="close-widget"></div>
+          </div>
+      </div>
+    <!-- Script tags -->
+    <script src="scroll.js"></script>
+    <script src="node_modules/parallax-js/dist/parallax.min.js"></script>
+    <script src="init.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+    <!-- <script src="chart.js"></script> -->
+    <script src="copy.js"></script>
+    <script src="open.js"></script>
+    <script src="rotate.js"></script>
+    <script src="parallaxScroll.js"></script>
+    <script src="shoWidget.js"></script>
+
+    <div class="root-container">
+      <div id="root"></div>
+    </div>
   </body>
 </html>
