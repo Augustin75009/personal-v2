@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
 import Chart from './chart';
-import Item from './item_list';
+import ItemList from './item_list';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      skills: [
+        '<i className="devicon-css3-plain-wordmark colored"></i>',
+        '<i className="devicon-css3-plain-wordmark colored"></i>',
+        '<i className="devicon-css3-plain-wordmark colored"></i>'
+      ],
+      selectedSkill: '<i className="devicon-css3-plain-wordmark colored"></i>'
+    };
+  }
   componentDidMount () {
     const script = document.createElement("script");
 
@@ -15,7 +26,7 @@ class App extends Component {
     return (
       <div className="render-wrapper">
         <Chart />
-        <Item />
+        <ItemList skills={this.state.skills} selectedSkill={this.selectedSkill} />
       </div>
     );
   }
