@@ -731,6 +731,12 @@ body {
   }
 }
 
+.root-container {
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+
+}
+
 .render-wrapper {
   display: flex;
   flex-direction: row;
@@ -750,6 +756,28 @@ body {
   background-repeat: no-repeat;
   border-radius: 8px;
 }
+
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.item-list {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.item-selected {
+  flex: 1;
+  text-align: center;
+}
+
+.skill-list {
+  display: -webkit-inline-box;
+}
+
+
  /* --------------@Media-------------------*/
 /*@media (max-height: 750px) and (max-width: 1000px) {
   #myChart.chartjs-render-monitor {
