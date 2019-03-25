@@ -402,24 +402,11 @@ body {
   cursor: pointer;
 }
 
-.chart {
-  width: 50%;
-  margin: auto;
-  border-radius: 5px;
-  background-color: transparent;
-  /*padding-top: 160px;*/
-  /*border: solid 2px white;*/
-  position: absolute;
-  top: 25%;
-  right: 0;
-  z-index: 1;
-  padding-top: 12px;
+.item-list {
+  cursor: pointer;
 }
 
-#myChart.chartjs-render-monitor {
-    /*margin-top: 35px;*/
-    height: 50vh;
-  }
+
 
 
 @keyframes backcolor {
@@ -496,6 +483,22 @@ body {
   z-index: 240;
 }
 
+.opacity {
+  animation : setOpacity 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes setOpacity {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
+    }
+  }
+
 #widget-container {
   position: fixed;
   bottom: 56;
@@ -504,7 +507,7 @@ body {
   height: 54px;
   width: 54px;
   border-radius: 50%;
-  // background-image: url(infos.svg);
+  background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506102/infos.svg);
   background-size: cover;
 }
 
@@ -559,8 +562,8 @@ body {
   bottom: 56;
   left: 44;
   z-index: 352;
-  height: 54px;
-  width: 54px;
+  height: 55px;
+  width: 55px;
   border-radius: 50%;
   cursor: pointer;
   /*border: solid 2px red;*/
@@ -576,7 +579,7 @@ body {
   }*/
 
 .widget-mail.show-widget {
-  animation : shoWidgetMail 0.5s;
+  animation : shoWidgetMail 0.4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -584,7 +587,7 @@ body {
 @keyframes shoWidgetMail {
   70% {
     visibility: visible;
-    // background-image: url(gmail.svg);
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506121/gmail.svg);
     background-size: cover;
   }
 
@@ -592,13 +595,13 @@ body {
     bottom: 132;
     left: 50.5;
     visibility: visible;
-    // background-image: url(gmail.svg);
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506121/gmail.svg);
     background-size: cover;
     }
   }
 
 .widget-phone.show-widget {
-  animation : shoWidgetPhone 0.5s;
+  animation : shoWidgetPhone 0.4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 
@@ -607,7 +610,7 @@ body {
 @keyframes shoWidgetPhone {
   70% {
     visibility: visible;
-    // background-image: url(phone-circle.svg);
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506139/phone-circle.svg);
     background-size: cover;
   }
 
@@ -615,14 +618,14 @@ body {
     bottom: 182;
     left: 50.5;
     visibility: visible;
-    // background-image: url(phone-circle.svg);
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506139/phone-circle.svg);
     background-size: cover;
 
     }
   }
 
 .widget-cv.show-widget {
-  animation : shoWidgetCv 0.5s;
+  animation : shoWidgetCv 0.4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   z-index: 361;
@@ -631,7 +634,7 @@ body {
 @keyframes shoWidgetCv {
   70% {
     visibility: visible;
-    // background-image: url(document.svg);
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506156/document.svg);
     background-size: cover;
   }
 
@@ -639,13 +642,13 @@ body {
     bottom: 232;
     left: 50.5;
     visibility: visible;
-    // background-image: url(document.svg);
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506156/document.svg);
     background-size: cover;
     }
   }
 
 .widget-close.show-widget {
-  animation : shoWidgetClose 0.5s;
+  animation : shoWidgetClose 0.01s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   transform: scale(1.02)
@@ -654,14 +657,14 @@ body {
 @keyframes shoWidgetClose {
   70% {
     visibility: visible;
-    // background-image: url(close3.svg);
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506112/close3.svg);
     background-size: cover;
   }
 
   100% {
     z-index: 351;
     visibility: visible;
-    // background-image: url(close3.svg);
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506112/close3.svg);
     background-size: cover;
     }
   }
@@ -681,7 +684,7 @@ body {
 }
 
 .content-mail.show-content {
-  animation : showContent 0.5s 0.5s;
+  animation : showContent 0.4s 0.3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -693,7 +696,7 @@ body {
 }
 
 .content-phone.show-content {
-  animation : showContent 0.5s 0.5s;
+  animation : showContent 0.4s 0.3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -705,7 +708,7 @@ body {
 }
 
 .content-cv.show-content {
-  animation : showContent 0.5s 0.5s;
+  animation : showContent 0.4s 0.3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -731,51 +734,139 @@ body {
   }
 }
 
-.root-container {
-  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
-
+#myChart2 {
+  padding-top: 20px;
 }
 
 .render-wrapper {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
-.render-wrapper > div {
+.render-wrapper > .render-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.render-wrapper > .item-wrapper {
   flex: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.test {
-  width: 60px;
-  height: 60px;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552989782/augustin_cousin.jpg);
-  position: relative;
+// .item-wrapper {
+// //   display: flex;
+// //   flex-wrap: wrap;
+// //   // font: ;lex-direction: column;
+// //   // overflow: scroll;
+// // }
+
+.item-list {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.item-selected {
+  // flex: 1;
+  text-align: center;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-list.fixedHeight {
+  max-height: 60vh;
+  overflow: scroll;
+  margin-top: 20px;
+}
+
+.skills-card {
+  width: 110px !important;
+  height: 100px !important;
+}
+
+i.selected {
+  font-size: 200px !important;
+  border: solid;
+  border-radius: 8px;
+}
+
+div.selected {
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+// div.selected > .skills-card {
+//   height: 200px;
+//   width: 200px;
+//   border-radius: 8px;
+// }
+
+.chart {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: transparent;
+  /*padding-top: 160px;*/
+  /*border: solid 2px white;*/
+  position: absolute;
+  top: 25%;
+  right: 0;
+  z-index: 1;
+  padding-top: 12px;
+}
+
+#myChart.chartjs-render-monitor {
+    /*margin-top: 35px;*/
+    height: 50vh;
+  }
+
+.front {
+  width: 100px;
+  height: 100px;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553532140/web.png);
   background-size: cover;
-  z-index: 200;
   background-repeat: no-repeat;
   border-radius: 8px;
 }
 
-.item-wrapper {
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
+.back {
+  width: 100px;
+  height: 100px;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553532294/data.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
 }
 
-.item-list {
-  flex: 1;
-  overflow-y: scroll;
+.innovation {
+  width: 100px;
+  height: 100px;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553531296/innovation.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
 }
 
-.item-selected {
-  flex: 1;
-  text-align: center;
+.teamwork {
+  width: 100px;
+  height: 100px;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553532088/team.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
 }
 
-.skill-list {
-  display: -webkit-inline-box;
-}
+
 
 
  /* --------------@Media-------------------*/

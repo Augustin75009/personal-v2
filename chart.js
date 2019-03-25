@@ -1,13 +1,15 @@
 var ctx = document.getElementById("myChart");
 var ctx2 = document.getElementById("myChart2");
+var ctx3 = document.querySelector("#selected .skills-card i");
+// var ctx3 = document.querySelector(".item-selected .skills-card i");
 
 
 // const myStatus = JSON.parse(ctx.canvas.dataset.deliveries)
-// const data1 = ctx.dataset.data1
-// const data2 = ctx.dataset.data2
-// const data3 = ctx.dataset.data3
-// const data4 = ctx.dataset.data4
-// const data5 = ctx.dataset.data5
+// const data2 = ctx2.dataset.data2
+// const data3 = ctx2.dataset.data3
+// const data4 = ctx2.dataset.data4
+// const data5 = ctx2.dataset.data5
+
 
 
 var myRadarChart = new Chart(ctx, {

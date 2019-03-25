@@ -6,8 +6,10 @@ const widgetClose = document.querySelector('#widget-close');
 const contentMail = document.querySelector('.content-mail');
 const contentPhone = document.querySelector('.content-phone');
 const contentCv = document.querySelector('.content-cv');
-const contentClose = document.querySelector('.content-close');
-// const body = document.querySelector('#scroll');
+// const contentClose = document.querySelector('.content-close');
+const body1 = document.querySelector('.banner');
+const body2 = document.querySelector('.first-card');
+const body3 = document.querySelector('.second-card');
 
 
  widget.addEventListener('click', function() {
@@ -18,7 +20,9 @@ const contentClose = document.querySelector('.content-close');
     contentMail.classList.add("show-content");
     contentPhone.classList.add("show-content");
     contentCv.classList.add("show-content");
-    // body.classList.add("opacity");
+    body1.classList.add("opacity");
+    body2.classList.add("opacity");
+    body3.classList.add("opacity");
 
 });
 
@@ -30,5 +34,7 @@ const contentClose = document.querySelector('.content-close');
     contentMail.classList.remove("show-content");
     contentPhone.classList.remove("show-content");
     contentCv.classList.remove("show-content");
-    // body.classList.remove("opacity");
+    body1.classList.remove("opacity");
+    body2.classList.remove("opacity");
+    body3.classList.remove("opacity");
 });
