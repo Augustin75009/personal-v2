@@ -7,6 +7,7 @@ class ItemList extends Component {
       this.props.skills.map((skill, index) => {
         return <Item
           label={skill.label}
+          class={skill.class}
           data={skill.data}
           type={skill.type}
           key={index}

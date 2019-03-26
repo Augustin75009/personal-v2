@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 class Item extends Component {
   picked = (event) => {
-    this.props.selectSkill(this.props.label, this.props.data, this.props.type);
-    myRadarChart2.data.labels = ['Expérience', 'Niveau', 'Goût', 'Test', 'Syntaxe'];
+    this.props.selectSkill(this.props.class, this.props.data, this.props.type);
+    myRadarChart2.data.labels = [this.props.label[0], this.props.label[1], this.props.label[2], this.props.label[3], this.props.label[4]];
     myRadarChart2.data.datasets[0].data = [
       this.props.data[0],
       this.props.data[1],
@@ -17,7 +17,7 @@ class Item extends Component {
     if (this.props.type == "i") {
       return (
         <div className="skills-card">
-          <i className={this.props.label}
+          <i className={this.props.class}
               data-data0={this.props.data[0]}
               data-data1={this.props.data[1]}
               data-data2={this.props.data[2]}
@@ -30,7 +30,7 @@ class Item extends Component {
     } else {
       return (
         <div className="skills-card">
-          <div className={this.props.label}
+          <div className={this.props.class}
               data-data0={this.props.data[0]}
               data-data1={this.props.data[1]}
               data-data2={this.props.data[2]}

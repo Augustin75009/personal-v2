@@ -1,5 +1,5 @@
 
-const copyMailId = document.querySelectorAll('#mail');
+const copyMailId = document.querySelectorAll('.copiable');
 
 copyMailId.forEach(copyText => {
     copyText.addEventListener('click', () => {
@@ -18,9 +18,10 @@ copyMailId.forEach(copyText => {
             // copyText.classList.add('success');
 
             setTimeout(() => {
+              document.querySelector(".copied-box").classList.remove("showBox");
                 // copyText.textContent = mailId;
                 // copyText.classList.remove('success');
-            }, 1000);
+            }, 4000);
         } catch (e) {
             copyText.textContent = 'Couldn\'t copy, hit Ctrl+C!';
             // copyText.classList.add('error');

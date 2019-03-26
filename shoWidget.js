@@ -11,6 +11,7 @@ const body1 = document.querySelector('.banner');
 const body2 = document.querySelector('.first-card');
 const body3 = document.querySelector('.second-card');
 const progress = document.querySelector('.container-scroll');
+var disableScroll = true;
 
 
  widget.addEventListener('click', function() {
@@ -28,9 +29,9 @@ const progress = document.querySelector('.container-scroll');
     document.querySelector(".item-wrapper").classList.remove("addClass");
     document.querySelector(".item-wrapper").classList.remove("removeClass");
     body3.classList.add("opacity");
-    console.log(body3.classList)
     progress.classList.add("display");
-
+    widget.dataset.disableScroll = "true"
+    disableScroll =false;
 });
 
   widgetClose.addEventListener('click', function() {
@@ -48,6 +49,6 @@ const progress = document.querySelector('.container-scroll');
     document.getElementById("second-card").classList.remove("RemoveOpacity");
     document.querySelector(".item-wrapper").classList.add("addClass");
     document.querySelector(".item-wrapper").classList.remove("removeClass");
-    console.log(body3.classList)
     progress.classList.remove("display");
+    disableScroll = true;
 });

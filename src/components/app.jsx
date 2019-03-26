@@ -9,92 +9,109 @@ class App extends Component {
     this.state = {
       globalskills: [
         {
-          label: 'innovation',
-          data: [4, 4, 3, 4, 5],
+          class: 'back',
+          label: ["Ruby", "Rails", "Interêt", "Matlab", "Python"],
+          data: [4, 4, 5, 3, 3],
           type: 'div'
         },
         {
-          label: 'teamwork',
-          data: [4, 4, 3, 4, 5],
+          class: 'front',
+          label: ["Design", "CSS", "HTML", "Responsive", "Javascript"],
+          data: [3, 4, 5, 3, 4],
           type: 'div'
         },
         {
-          label: 'back',
-          data: [4, 4, 3, 4, 5],
+          class: 'teamwork',
+          label: ["Altruisme", "Com'", "Partage", "Pédagogie", "Proposition"],
+          data: [5, 3, 4, 3, 5],
           type: 'div'
         },
         {
-          label: 'front',
-          data: [2, 2, 3, 4, 5],
+          class: 'innovation',
+          label: ["Management", "Créativité", "Autonomie", "Mental", "Réactivité"],
+          data: [3, 5, 3, 4, 4],
           type: 'div'
         }
       ],
       skills: [
         {
-          label: 'devicon-react-original-wordmark colored',
-          data: [5, 2, 4, 4, 5],
+          class: 'devicon-react-original-wordmark colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [1, 3, 5, 3, 5],
           type: 'i'
         },
         {
-          label: 'devicon-ruby-plain-wordmark colored',
-          data: [5, 5, 3, 4, 5],
+          class: 'devicon-ruby-plain-wordmark colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [3, 4, 4, 5, 3],
           type: 'i'
         },
         {
-          label: 'devicon-rails-plain-wordmark colored',
-          data: [5, 5, 3, 4, 5],
+          class: 'devicon-rails-plain-wordmark colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [3, 4, 4, 5, 3],
           type: 'i'
         },
         {
-          label: 'devicon-python-plain-wordmark colored',
-          data: [1, 5, 3, 4, 5],
+          class: 'devicon-python-plain-wordmark colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [1, 3, 4, 1, 1],
           type: 'i'
         },
         {
-          label: 'devicon-css3-plain-wordmark colored',
-          data: [4, 4, 3, 4, 5],
+          class: 'devicon-css3-plain-wordmark colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [3, 3, 5, 5, 5],
           type: 'i'
         },
         {
-          label: 'devicon-html5-plain-wordmark colored',
-          data: [2, 2, 3, 4, 5],
+          class: 'devicon-html5-plain-wordmark colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [3, 4, 5, 5, 5],
           type: 'i'
         },
         {
-          label: 'devicon-webpack-plain colored',
-          data: [4, 4, 3, 4, 5],
+          class: 'devicon-webpack-plain colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [3, 3, 4, 1, 3],
           type: 'i'
         },
         {
-          label: 'devicon-github-plain-wordmark',
-          data: [4, 4, 3, 4, 5],
+          class: 'devicon-github-plain-wordmark',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [3, 4, 5, 4, 5],
           type: 'i'
         },
         {
-          label: 'devicon-jquery-plain-wordmark colored',
-          data: [3, 4, 3, 4, 5],
+          class: 'devicon-jquery-plain-wordmark colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [3, 3, 2, 3, 1],
           type: 'i'
         },
         {
-          label: 'devicon-bootstrap-plain-wordmark colored',
-          data: [3, 2, 3, 4, 5],
+          class: 'devicon-bootstrap-plain-wordmark colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [3, 3, 1, 4, 2],
           type: 'i'
         },
         {
-          label: 'devicon-slack-plain',
-          data: [4, 4, 3, 4, 5],
+          class: 'devicon-slack-plain',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [4, 5, 5, 5, 5],
           type: 'i'
         },
         {
-          label: 'devicon-trello-plain colored',
-          data: [4, 4, 3, 4, 5],
+          class: 'devicon-trello-plain colored',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [3, 4, 3, 3, 2],
           type: 'i'
         }
       ],
       selectedSkill:
       {
-        label: 'front selected',
-        data: [2, 2, 3, 5, 5],
+        class: 'back',
+        label: ["Ruby", "Rails", "Interêt", "Matlab", "Python"],
+        data: [4, 4, 5, 3, 3],
         type: 'div'
       }
     };
@@ -104,7 +121,7 @@ class App extends Component {
     this.setState({
       selectedSkill:
       {
-        label: `${src} selected`,
+        class: `${src} selected`,
         data: [data[0], data[1], data[2], data[3], data[4]],
         type: `${type}`
       }
@@ -127,6 +144,7 @@ class App extends Component {
           <Chart />
           <div className="item-selected" id="selected">
             <Item label={this.state.selectedSkill.label}
+                  class= {this.state.selectedSkill.class}
                   data={this.state.selectedSkill.data}
                   type={this.state.selectedSkill.type} />
           </div>
@@ -134,9 +152,13 @@ class App extends Component {
         <div className="item-wrapper">
           <div className="item-list">
           <h3 className="item-title">Profil</h3>
-            <ItemList skills={this.state.globalskills} selectSkill={this.selectSkill} fixedHeight="skill-list smallHeight" />
+            <ItemList skills={this.state.globalskills}
+                      selectSkill={this.selectSkill}
+                      fixedHeight="skill-list smallHeight" />
           <h3 className="item-title">Outils</h3>
-            <ItemList skills={this.state.skills} selectSkill={this.selectSkill} fixedHeight="skill-list fixedHeight" />
+            <ItemList skills={this.state.skills}
+                      selectSkill={this.selectSkill}
+                      fixedHeight="skill-list fixedHeight" />
           </div>
         </div>
       </div>

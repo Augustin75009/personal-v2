@@ -1,24 +1,26 @@
 var height = window.top.innerHeight;
 
+
 window.addEventListener("scroll", function() {
-  // console.log(window.scrollY);
-  // console.log(height);
-  if ((window.scrollY) > 2 * (height - 50)) {
-    // console.log("let's bright")
-    document.getElementById("second-card").classList.add("addOpacity");
-    document.getElementById("second-card").classList.remove("RemoveOpacity");
-    document.querySelector(".item-wrapper").classList.add("addClass");
-    document.querySelector(".item-wrapper").classList.remove("removeClass");
-  }
-  if ((window.scrollY) < 2 * (height - 50)) {
-    // console.log("let's dark")
-    document.getElementById("second-card").classList.remove("addOpacity");
-    document.getElementById("second-card").classList.add("RemoveOpacity");
-    document.querySelector(".item-wrapper").classList.remove("addClass");
-    document.querySelector(".item-wrapper").classList.add("removeClass");
+  if (disableScroll == true) {
+    // console.log(window.scrollY);
+    // console.log(height);
+    if ((window.scrollY) > 2 * (height - 50)) {
+      // console.log("let's bright")
+      document.getElementById("second-card").classList.add("addOpacity");
+      document.getElementById("second-card").classList.remove("RemoveOpacity");
+      document.querySelector(".item-wrapper").classList.add("addClass");
+      document.querySelector(".item-wrapper").classList.remove("removeClass");
+    }
+    if ((window.scrollY) < 2 * (height - 50)) {
+      // console.log("let's dark")
+      document.getElementById("second-card").classList.remove("addOpacity");
+      document.getElementById("second-card").classList.add("RemoveOpacity");
+      document.querySelector(".item-wrapper").classList.remove("addClass");
+      document.querySelector(".item-wrapper").classList.add("removeClass");
+    }
   }
 });
-
 
 window.addEventListener("scroll", function() {
   if (window.scrollY > (height - 50)) {
