@@ -109,7 +109,7 @@ class App extends Component {
       ],
       selectedSkill:
       {
-        class: 'back',
+        class: 'back selected',
         label: ["Ruby", "Rails", "Interêt", "Matlab", "Python"],
         data: [4, 4, 5, 3, 3],
         type: 'div'
