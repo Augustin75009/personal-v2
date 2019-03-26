@@ -25,7 +25,7 @@
             <li class="layer2" data-depth="0.15"><div class="layer"></div></li>
             <li class="layer3" data-depth="0.2"><div class="layer"></div></li>
             <li class="layer4" data-depth="0.1"><div class="layer"></div></li>
-            <li class="bulle" data-depth="0.05"><div class="layer"></div></li>
+            <!-- <li class="bulle" data-depth="0.05"><div class="layer"></div></li> -->
             <li class="astro2" data-depth="0"></li>
             <li class="name" data-depth="0.3"></li>
           </ul>
@@ -59,35 +59,16 @@
           </ul>
       </div>
       <div class="second-card" id="second-card">
-        <div class="skills-description">
-          <div class="my-skills" id="my-skills">
-            <div class="skills-packages-1" id="skills-packages-1">
-              <div class="skills-card"><i class="devicon-css3-plain-wordmark colored"></i></div>
-              <div class="skills-card"><i class="devicon-html5-plain-wordmark colored"></i></div>
-              <div class="skills-card"><i class="devicon-react-original-wordmark colored"></i></div>
-              <div class="skills-card"><i class="devicon-jquery-plain-wordmark colored"></i></div>
-              <div class="skills-card"><i class="devicon-bootstrap-plain-wordmark colored"></i></div>
-            </div>
-            <div class="skills-packages-2" id="skills-packages-2">
-              <div class="skills-card"><i class="devicon-ruby-plain-wordmark colored"></i></div>
-              <div class="skills-card"><i class="devicon-rails-plain-wordmark colored"></i></div>
-              <div class="skills-card"><i class="devicon-python-plain-wordmark colored"></i></div>
-              <div class="skills-card"><i class="devicon-github-plain-wordmark"></i></div>
-            </div>
-          </div>
-            <div class="skills-selector">
-              <div id="circleLeft" class="selector-choice">
-              <i onClick="scrolledLeft(myRadarChart)" id="arrow-fixed-left" class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></div>
-              <div id="circleRight">
-              <i onClick="scrollRight(myRadarChart)" id="arrow-fixed-right" class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></div>
-            </div>
-        </div>
-
-        <div class="chart" id="chart-container">
-           <canvas id="myChart"></canvas>
-        </div>
+        <div id="root"></div>
       </div>
-       <div class="widget">
+       <div class="container-scroll">
+        <div class="blue-scroll"></div>
+        <div class="grey-scroll"></div>
+        <div class="progress-div-first"></div>
+        <div class="progress-div-second"></div>
+        <div class="progress-div-third"></div>
+       </div>
+      <div class="widget">
         <div id="widget-container">
           <div id="widget-mail" class="widget-mail">
             <div class="content-mail" id="mail"><span><strong>augustincousin.pro@gmail.com</strong></span></div>
@@ -104,7 +85,6 @@
           </div>
       </div>
     <!-- Script tags -->
-    <script src="scroll.js"></script>
     <script src="node_modules/parallax-js/dist/parallax.min.js"></script>
     <script src="init.js"></script>
     <script src="node_modules/chart.js/dist/Chart.js"></script>
@@ -114,9 +94,10 @@
     <script src="rotate.js"></script>
     <script src="parallaxScroll.js"></script>
     <script src="shoWidget.js"></script>
+    <script src="scroll.js"></script>
 
-    <div class="root-container">
-      <div id="root"></div>
+    <!-- <div class="root-container"> -->
+
     </div>
   </body>
 </html>

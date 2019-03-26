@@ -2,7 +2,7 @@ var height = window.top.innerHeight;
 const parallaxScroll = document.querySelector(".name")
 const parallaxScrollBis = document.querySelector(".astro")
 const parallaxScrollBisBis = document.querySelector(".astro2")
-const parallaxScrollBulle = document.querySelector(".bulle")
+// const parallaxScrollBulle = document.querySelector(".bulle")
 
 window.addEventListener("scroll", function() {
   let offset = window.pageYOffset;
@@ -12,6 +12,6 @@ window.addEventListener("scroll", function() {
   parallaxScrollBisBis.style.backgroundPositionY = offsetBis * 0.65 + height + "px";
   parallaxScrollBis.style.backgroundPositionY = offsetBis * 0.65  + "px";
   // sleep(0.01);
-  parallaxScrollBulle.style.visibility = "hidden";
+  // parallaxScrollBulle.style.visibility = "hidden";
   // console.log(height)
 })

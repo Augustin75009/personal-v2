@@ -10,6 +10,7 @@ const contentCv = document.querySelector('.content-cv');
 const body1 = document.querySelector('.banner');
 const body2 = document.querySelector('.first-card');
 const body3 = document.querySelector('.second-card');
+const progress = document.querySelector('.container-scroll');
 
 
  widget.addEventListener('click', function() {
@@ -22,7 +23,13 @@ const body3 = document.querySelector('.second-card');
     contentCv.classList.add("show-content");
     body1.classList.add("opacity");
     body2.classList.add("opacity");
+    document.getElementById("second-card").classList.remove("addOpacity");
+    document.getElementById("second-card").classList.remove("RemoveOpacity");
+    document.querySelector(".item-wrapper").classList.remove("addClass");
+    document.querySelector(".item-wrapper").classList.remove("removeClass");
     body3.classList.add("opacity");
+    console.log(body3.classList)
+    progress.classList.add("display");
 
 });
 
@@ -37,4 +44,10 @@ const body3 = document.querySelector('.second-card');
     body1.classList.remove("opacity");
     body2.classList.remove("opacity");
     body3.classList.remove("opacity");
+    document.getElementById("second-card").classList.add("addOpacity");
+    document.getElementById("second-card").classList.remove("RemoveOpacity");
+    document.querySelector(".item-wrapper").classList.add("addClass");
+    document.querySelector(".item-wrapper").classList.remove("removeClass");
+    console.log(body3.classList)
+    progress.classList.remove("display");
 });

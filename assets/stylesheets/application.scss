@@ -264,12 +264,12 @@ body {
   /*border: solid 2px black;*/
   overflow: hidden;
   position: relative;
-  /*animation: backcolor 1s;*/
   animation-iteration-count: 1;
   text-align: center;
   /*animation-fill-mode: forwards;*/
   /*animation-play-state: paused;*/
 }
+
 
 .skills-description {
   width: 105%;
@@ -406,8 +406,22 @@ body {
   cursor: pointer;
 }
 
+.item-wrapper.addClass {
+  animation: wrapperAddOpacity 0.9s forwards;
+}
+
+.item-wrapper.removeClass {
+  animation: wrapperRemoveOpacity 0.9s forwards
+}
 
 
+.second-card.addOpacity {
+  animation: backcolor 0.9s forwards;
+}
+
+.second-card.RemoveOpacity {
+  animation: backcolord 0.3s forwards;
+}
 
 @keyframes backcolor {
   0% {
@@ -478,6 +492,77 @@ body {
 
 
 /* ---------------widget-----------------*/
+.container-scroll {
+  display: flex;
+  height: 3px;
+  transform: rotate(90deg) translateY(130px);
+  width: 400px;
+  position: fixed;
+  top: 50vh;
+  z-index: 10000;
+}
+
+.blue-scroll {
+  width: 1px;
+  background: white;
+}
+
+.grey-scroll {
+  width: calc(50vh - 1px);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+// #progress-bar {
+//   display: none !important;
+//   position: fixed;
+//   display: flex;
+//   flex-direction: column;
+//   top: 22vh;
+//   height: 56vh !important;
+//   width: 2px;
+//   left: 70px;
+//   background-color: transparent;
+//   justify-content: space-between;
+//   z-index: 100000000;
+// }
+
+.progress-div-first, .progress-div-second, .progress-div-third {
+  width: 9px;
+  height: 9px;
+  margin-left: -4px;
+  border-radius: 50%;
+  // flex: 1;
+  background-color: rgba(220, 220, 220, 1);
+  // opacity: 0.9;
+  text-align: center;
+  cursor: pointer;
+}
+
+.progress-div-first {
+  background-color: white;
+  position: absolute;
+  top: -3px;
+  left: 1%;
+}
+
+.progress-div-second {
+  background-color: white;
+  position: absolute;
+  top: -3px;
+  left: 50%;
+}
+
+.progress-div-third {
+  background-color: white;
+  position: absolute;
+  top: -3px;
+  left: 100%;
+}
+
+
+.container-scroll.display {
+  display: none;
+}
 
 .widget {
   z-index: 240;
@@ -735,7 +820,7 @@ body {
 }
 
 #myChart2 {
-  padding-top: 20px;
+  padding-top: 35px;
 }
 
 .render-wrapper {
@@ -754,18 +839,36 @@ body {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
+  overflow: scroll;
+  animation-iteration-count: 1;
 }
 
-// .item-wrapper {
-// //   display: flex;
-// //   flex-wrap: wrap;
-// //   // font: ;lex-direction: column;
-// //   // overflow: scroll;
-// // }
+
+@keyframes wrapperRemoveOpacity {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+      }
+}
+
+@keyframes wrapperAddOpacity {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+      }
+}
+
+.item-title {
+  color: grey;
+}
+
 
 .item-list {
-  padding-top: 20px;
-  padding-right: 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .item-selected {
@@ -782,9 +885,10 @@ body {
   justify-content: space-between;
 }
 
+
 .skill-list.fixedHeight {
-  max-height: 60vh;
-  overflow: scroll;
+  // max-height: 50vh;
+  // overflow: scroll;
   margin-top: 20px;
 }
 
@@ -795,8 +899,6 @@ body {
 
 i.selected {
   font-size: 200px !important;
-  border: solid;
-  border-radius: 8px;
 }
 
 div.selected {
@@ -1076,6 +1178,7 @@ div.selected {
   .my-description {
     font-size: 13px !important;
   }
+
 
   #widget-container {
     position: fixed;

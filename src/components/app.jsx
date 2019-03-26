@@ -133,7 +133,9 @@ class App extends Component {
         </div>
         <div className="item-wrapper">
           <div className="item-list">
+          <h3 className="item-title">Profil</h3>
             <ItemList skills={this.state.globalskills} selectSkill={this.selectSkill} fixedHeight="skill-list smallHeight" />
+          <h3 className="item-title">Outils</h3>
             <ItemList skills={this.state.skills} selectSkill={this.selectSkill} fixedHeight="skill-list fixedHeight" />
           </div>
         </div>
