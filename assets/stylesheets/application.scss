@@ -819,6 +819,29 @@ body {
   }
 }
 
+.copied-box {
+  // display: none;
+  position: fixed;
+  top: -20px;
+  color: black;
+  z-index: 1;
+  margin-left: 50%;
+  background-color: white;
+}
+
+.copied-box.showBox {
+  animation: showBoxAnimation 1s;
+}
+
+@keyframes showBoxAnimation {
+  100% {
+    top: 20px;
+  }
+}
+
+// ---------------------------------------------------------------------------------------
+
+
 #myChart2 {
   padding-top: 35px;
 }

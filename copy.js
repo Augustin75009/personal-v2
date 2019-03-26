@@ -12,21 +12,21 @@ copyMailId.forEach(copyText => {
         try {
             document.execCommand('copy');
             selection.removeAllRanges();
-
-            const mailId = copyText.textContent;
-            copyText.textContent = 'Copied!';
-            copyText.classList.add('success');
+            document.querySelector(".copied-box").classList.add("showBox");
+            // const mailId = copyText.textContent;
+            // copyText.textContent = 'Copied!';
+            // copyText.classList.add('success');
 
             setTimeout(() => {
-                copyText.textContent = mailId;
-                copyText.classList.remove('success');
+                // copyText.textContent = mailId;
+                // copyText.classList.remove('success');
             }, 1000);
         } catch (e) {
             copyText.textContent = 'Couldn\'t copy, hit Ctrl+C!';
-            copyText.classList.add('error');
+            // copyText.classList.add('error');
 
             setTimeout(() => {
-                errorMsg.classList.remove('show');
+                // errorMsg.classList.remove('show');
             }, 1200);
         }
     });
