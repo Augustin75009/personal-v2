@@ -143,10 +143,10 @@ class App extends Component {
 
     script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676978/chartInit.js";
     // script.src = "../../chartInit.js";
-    script.async = true;
+    script.async = false;
     script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553702953/setClass.js";
     // script2.src = "../../setClass.js";
-    script2.async = true;
+    script2.async = false;
 
     document.body.appendChild(script);
     document.body.appendChild(script2);
