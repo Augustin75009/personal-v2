@@ -756,19 +756,15 @@ body {
 }
 
 i.selected {
-  // font-size: 150px !important;
   opacity: 1;
   box-shadow: 3px 3px 12px 3px rgba(0,0,0,0.23);
 }
 
 div.selected {
-  // height: 150px;
-  // width: 150px;
-  // border-radius: 8px;
   opacity: 1;
   box-shadow: 3px 3px 12px 3px rgba(0,0,0,0.23);
   border-radius: 8px;
-  // background-color: red;
+  background: rgba(250,250,250,0.1);
 }
 
 .chart {
