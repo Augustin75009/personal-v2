@@ -6,7 +6,6 @@ const widgetClose = document.querySelector('#widget-close');
 const contentMail = document.querySelector('.content-mail');
 const contentPhone = document.querySelector('.content-phone');
 const contentCv = document.querySelector('.content-cv');
-// const contentClose = document.querySelector('.content-close');
 const body1 = document.querySelector('.banner');
 const body2 = document.querySelector('.first-card');
 const body3 = document.querySelector('.second-card');

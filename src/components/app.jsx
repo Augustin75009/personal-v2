@@ -131,7 +131,7 @@ class App extends Component {
   componentDidMount () {
     const script = document.createElement("script");
 
-    script.src = "../../test.js";
+    script.src = "../../chart.js";
     script.async = true;
 
     document.body.appendChild(script);

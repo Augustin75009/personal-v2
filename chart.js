@@ -1,10 +1,4 @@
 var ctx2 = document.getElementById("myChart2");
-var ctx3 = document.querySelector("#selected .skills-card i");
-
-
-// const myStatus = JSON.parse(ctx.canvas.dataset.deliveries)
-// const data2 = ctx2.dataset.data2
-
 
 var myRadarChart2 = new Chart(ctx2, {
   type: 'radar',

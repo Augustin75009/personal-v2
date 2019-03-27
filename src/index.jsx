@@ -7,7 +7,6 @@ import '../node_modules/parallax-js/dist/parallax.min';
 import '../node_modules/chart.js/dist/Chart';
 import '../init';
 import '../copy';
-import '../open';
 import '../parallaxScroll';
 import '../shoWidget';
 import '../scroll';
