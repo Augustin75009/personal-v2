@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 class Item extends Component {
   picked = (event) => {
-    this.props.selectSkill(this.props.class, this.props.data, this.props.type);
+    // this.props.selectSkill(this.props.class, this.props.data, this.props.type);
+    // this.props.selectSkill(this.props.class);
+    // console.log(this.props.class)
+    // this.props.skills.map((skill, index) => {
+    //   console.log(skill.class)
+    // })
     myRadarChart2.data.labels = [this.props.label[0], this.props.label[1], this.props.label[2], this.props.label[3], this.props.label[4]];
     myRadarChart2.data.datasets[0].data = [
       this.props.data[0],

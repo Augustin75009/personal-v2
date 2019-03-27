@@ -85,7 +85,11 @@ body {
   position: relative;
   background-position: 90% 0%;
   background-repeat: no-repeat;
-  z-index: 10000 !important;
+  z-index: 10 !important;
+}
+
+.layer {
+  z-index: 100000000000;
 }
 
 .astro2 {
@@ -96,7 +100,7 @@ body {
   position: relative;
   background-position: 90% 38vh;
   background-repeat: no-repeat;
-  z-index: 10000 !important;
+  z-index: 1000000 !important;
 }
 
 
@@ -144,7 +148,7 @@ body {
   background-size: cover;
   height: 100vh;
   width: 100% !important;
-  z-index: 1;
+  z-index: 1000000 !important;
   margin: auto;
   vertical-align: bottom;
   overflow: hidden;
@@ -232,7 +236,12 @@ body {
 }
 
 .skills-card {
-  margin-top: 15px;
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
+.skills-card > div {
+  margin: auto;
 }
 
 .item-list {
@@ -336,12 +345,12 @@ body {
 
 .blue-scroll {
   width: 1px;
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .grey-scroll {
   width: calc(50vh - 1px);
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .progress-div-first, .progress-div-second, .progress-div-third {
@@ -349,9 +358,7 @@ body {
   height: 9px;
   margin-left: -4px;
   border-radius: 50%;
-  // flex: 1;
-  background-color: rgba(220, 220, 220, 1);
-  // opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   cursor: pointer;
 }
@@ -661,7 +668,7 @@ body {
 
 
 #myChart2 {
-  padding-top: 40px;
+  margin-top: 20vh;
 }
 
 .render-wrapper {
@@ -674,6 +681,13 @@ body {
   flex: 2;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.chart-wrapper {
+  // position: absolute;
+  top: 20%;
+  z-index: 1;
 }
 
 .render-wrapper > .item-wrapper {
@@ -704,7 +718,7 @@ body {
 }
 
 .item-title {
-  color: grey;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -718,6 +732,10 @@ body {
   margin: auto;
   height: 200px;
   width: 200px;
+
+  position: absolute;
+    top: 38%;
+    left: 41%;
 }
 
 .skill-list {
@@ -728,22 +746,29 @@ body {
 
 
 .skill-list.fixedHeight {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .skills-card {
   width: 110px !important;
   height: 100px !important;
+  opacity: 0.4;
 }
 
 i.selected {
-  font-size: 200px !important;
+  // font-size: 150px !important;
+  opacity: 1;
+  box-shadow: 3px 3px 12px 3px rgba(0,0,0,0.23);
 }
 
 div.selected {
-  height: 200px;
-  width: 200px;
+  // height: 150px;
+  // width: 150px;
+  // border-radius: 8px;
+  opacity: 1;
+  box-shadow: 3px 3px 12px 3px rgba(0,0,0,0.23);
   border-radius: 8px;
+  // background-color: red;
 }
 
 .chart {
@@ -890,8 +915,13 @@ div.selected {
 
 @media (max-width: 700px) {
 
+  .skills-card {
+    display: flex;
+  }
+
   .skills-card>i {
-    font-size: 55px
+    font-size: 72px;
+    margin: auto;
   }
 
   .skills-description {
@@ -936,7 +966,7 @@ div.selected {
   }
 
   #myChart2 {
-    height: 45vh !important;
+    height: 36vh !important;
     padding-top: 75px;
   }
 
@@ -998,11 +1028,11 @@ div.selected {
     margin: 0px;
   }
 
-  div.selected {
-    height: 100px;
-    width: 100px;
-    border-radius: 8px;
-  }
+  // div.selected {
+  //   height: 100px;
+  //   width: 100px;
+  //   border-radius: 8px;
+  // }
 
   .render-wrapper > .render-content > div {
     flex: 1;
@@ -1135,6 +1165,7 @@ div.selected {
     #myChart2 {
     height: 37vh !important;
     padding-top: 75px;
+    margin-top: 10px !important;
   }
 }
 
@@ -1191,6 +1222,7 @@ div.selected {
   #myChart2 {
     height: 45vh !important;
     padding-top: 75px;
+    // margin-top: 10px !important;
   }
 
   .item-wrapper.removeClass {
@@ -1247,11 +1279,11 @@ div.selected {
     margin: 0px;
   }
 
-  div.selected {
-    height: 100px;
-    width: 100px;
-    border-radius: 8px;
-  }
+  // div.selected {
+  //   height: 100px;
+  //   width: 100px;
+  //   border-radius: 8px;
+  // }
 
   .render-wrapper > .render-content > div {
     flex: 1;
@@ -1268,6 +1300,7 @@ div.selected {
   .skills-card {
     width: 124px !important;
     height: 150px !important;
+    opacity: 0.5;
 }
 }
 

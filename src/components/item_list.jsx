@@ -10,6 +10,7 @@ class ItemList extends Component {
           class={skill.class}
           data={skill.data}
           type={skill.type}
+          skills={this.props.skills}
           key={index}
           selectSkill={this.props.selectSkill} />;
       })

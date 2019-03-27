@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Chart from './chart';
 import ItemList from './item_list';
-import Item from './item';
+// import Item from './item';
 
 class App extends Component {
   constructor() {
@@ -117,36 +117,47 @@ class App extends Component {
     };
   }
 
-  selectSkill = (src, data, type) => {
-    this.setState({
-      selectedSkill:
-      {
-        class: `${src} selected`,
-        data: [data[0], data[1], data[2], data[3], data[4]],
-        type: `${type}`
-      }
-    });
-  }
+  // selectSkill = (src, data, type) => {
+  //   this.setState({
+  //     selectedSkill:
+  //     {
+  //       class: `${src} selected`,
+  //       data: [data[0], data[1], data[2], data[3], data[4]],
+  //       type: `${type}`
+  //     }
+  //   });
+  // }
+
+  //   selectSkill = (src) => {
+  //   this.setState({
+  //     skills[0]:
+  //     {
+  //       class: `${src} selected`,
+  //     }
+  //   });
+  // }
 
   componentDidMount () {
     const script = document.createElement("script");
+    const script2 = document.createElement("script");
 
     script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676978/chartInit.js";
+    // script.src = "../../chartInit.js";
     script.async = true;
+    script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553702953/setClass.js";
+    // script2.src = "../../setClass.js";
+    script2.async = true;
 
     document.body.appendChild(script);
+    document.body.appendChild(script2);
 
   }
   render() {
     return (
       <div className="render-wrapper">
         <div className="render-content">
-          <Chart />
-          <div className="item-selected" id="selected">
-            <Item label={this.state.selectedSkill.label}
-                  class= {this.state.selectedSkill.class}
-                  data={this.state.selectedSkill.data}
-                  type={this.state.selectedSkill.type} />
+          <div className="chart-wrapper">
+            <Chart />
           </div>
         </div>
         <div className="item-wrapper">
