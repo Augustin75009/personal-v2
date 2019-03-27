@@ -231,13 +231,14 @@ body {
 }
 
 .skills-card>i {
-  font-size: 100px;
-  margin: 5px;
+  font-size: 90px;
+  margin: auto;
 }
 
 .skills-card {
   margin-top: 20px;
   opacity: 0.5;
+  display: flex;
 }
 
 .skills-card > div {
