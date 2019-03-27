@@ -4,9 +4,9 @@ var myRadarChart2 = new Chart(ctx2, {
   type: 'radar',
   data: {
     labels:
-      ["Créativité", "Autonomie", "Mental", "Réactivité", "Management"],
+      ["Ruby", "Rails", "C/C++", "Matlab", "Python"],
     datasets: [{
-      data: [5, 4, 3, 4, 3],
+      data: [5, 4, 3, 2, 3],
       borderWidth: 1,
       borderColor: 'rgba(65, 156, 255, 0)',
       // backgroundColor: 'red',
@@ -43,7 +43,7 @@ var myRadarChart2 = new Chart(ctx2, {
         display: false
       },
       pointLabels: {
-        fontSize: 18,
+        fontSize: 17,
         display: true,
         fontColor: 'grey'
       }

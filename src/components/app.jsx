@@ -10,8 +10,8 @@ class App extends Component {
       globalskills: [
         {
           class: 'back',
-          label: ["Ruby", "Rails", "Interêt", "Matlab", "Python"],
-          data: [4, 4, 5, 3, 3],
+          label: ["Ruby", "Rails", "C/C++", "Matlab", "Python"],
+          data: [5, 4, 3, 2, 3],
           type: 'div'
         },
         {
@@ -110,7 +110,7 @@ class App extends Component {
       selectedSkill:
       {
         class: 'back selected',
-        label: ["Ruby", "Rails", "Interêt", "Matlab", "Python"],
+        label: ["Ruby", "Rails", "C/C++", "Matlab", "Python"],
         data: [4, 4, 5, 3, 3],
         type: 'div'
       }
@@ -141,7 +141,7 @@ class App extends Component {
     const script = document.createElement("script");
     const script2 = document.createElement("script");
 
-    script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676978/chartInit.js";
+    script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553722965/chartInit.js";
     // script.src = "../../chartInit.js";
     script.async = false;
     script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553702953/setClass.js";

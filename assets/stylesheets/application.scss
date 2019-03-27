@@ -128,8 +128,8 @@ body {
 }
 
 .banner {
-  background-color: black;
-  background-size: cover;
+  background: black;
+  // background-size: cover;
   height: 100vh;
   width: 100% !important;
   position: relative;
@@ -917,7 +917,7 @@ div.selected {
   }
 
   .skills-card>i {
-    font-size: 72px;
+    font-size: 60px;
     margin: auto;
   }
 
@@ -949,13 +949,19 @@ div.selected {
 @media  screen and (max-width: 800px) {
 
   .back, .front, .innovation, .teamwork {
-    height: 90px !important;
-    width: 90px !important;
+    height: 60px !important;
+    width: 60px !important;
     margin: auto;
   }
 
+  .skills-card {
+    height: 70px !important;
+    width: 70px !important;
+    margin: 8px !important;
+  }
+
   .item-list {
-    padding: 20px 20px 60px 20px;
+    padding: 0px 0px 80px 0px;
   }
 
   .copied-box {
@@ -963,8 +969,8 @@ div.selected {
   }
 
   #myChart2 {
-    height: 36vh !important;
-    padding-top: 75px;
+    // height: 36vh !important;
+    // padding-top: 75px;
   }
 
   .item-wrapper.removeClass {
@@ -1009,7 +1015,7 @@ div.selected {
   }
 
   .render-wrapper > .item-wrapper {
-    flex: 2;
+    flex: 4;
   }
 
   .render-wrapper > .render-content {
@@ -1160,9 +1166,9 @@ div.selected {
 
 @media  screen and (max-width: 800px) {
     #myChart2 {
-    height: 37vh !important;
-    padding-top: 75px;
-    margin-top: 10px !important;
+    // height: 37vh !important;
+    // padding-top: 75px;
+    margin-top: 24px !important;
   }
 }
 
