@@ -141,8 +141,8 @@ class App extends Component {
     const script = document.createElement("script");
     const script2 = document.createElement("script");
 
-    // script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553790532/chartInit.js";
-    script.src = "../../js/chartInit.js";
+    script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553794387/chartInit.js";
+    // script.src = "../../js/chartInit.js";
     script.async = false;
     script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553702953/setClass.js";
     // script2.src = "../../js/setClass.js";
