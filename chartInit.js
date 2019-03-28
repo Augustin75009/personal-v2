@@ -8,10 +8,10 @@ var myRadarChart2 = new Chart(ctx2, {
     datasets: [{
       data: [5, 4, 3, 2, 3],
       borderWidth: 1,
-      borderColor: 'rgba(65, 156, 255, 0)',
-      // backgroundColor: 'red',
-      // backgroundColor: 'rgba(0,255,0,0.7)'
-      backgroundColor: 'rgba(65, 156, 255, 0.7)'
+      borderColor: 'rgba(255,255,255,0.7)',
+      // borderColor: 'rgba(65, 156, 255, 0)',
+      backgroundColor: 'rgba(67, 176, 92, 0.7)'
+      // backgroundColor: 'rgba(65, 156, 255, 0.7)'
     }]
   },
   options: {

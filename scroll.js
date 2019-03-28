@@ -65,3 +65,18 @@ document.querySelector('.progress-div-second').addEventListener('click', () => {
 document.querySelector('.progress-div-third').addEventListener('click', () => {
   document.getElementById('second-card').scrollIntoView({ behavior: "smooth" });
 });
+
+// for phone ------------------------
+
+document.querySelector('.link.A').addEventListener('click', () => {
+  document.getElementById('banner').scrollIntoView();
+});
+document.querySelector('.link.B').addEventListener('click', () => {
+  document.getElementById('first-card').scrollIntoView();
+});
+document.querySelector('.link.C').addEventListener('click', () => {
+  document.getElementById('second-card').scrollIntoView();
+});
+document.querySelector('.link.D').addEventListener('click', () => {
+  document.getElementById('banner').scrollIntoView();
+});

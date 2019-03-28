@@ -275,13 +275,15 @@ body {
     background-color: black;
   }
   100% {
-    background-color: #19181E;
+    background-color: black;
+    // background-color: #19181E;
       }
 }
 
 @keyframes backcolord {
   0% {
-    background-color: #19181E;
+    background-color: black;
+    // background-color: #19181E;
   }
   100% {
     background-color: black;
@@ -420,6 +422,10 @@ body {
   border-radius: 50%;
   background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506102/infos.svg);
   background-size: cover;
+}
+
+.footer {
+  display: none;
 }
 
 #widget-container:hover {
@@ -670,6 +676,8 @@ body {
 
 #myChart2 {
   margin-top: 20vh;
+  // box-shadow: inset 0px 0px 138px 9px rgba(255,255,255,0.2);
+  // padding: 4px;
 }
 
 .render-wrapper {
@@ -683,6 +691,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  box-shadow: inset 0px 0px 138px 9px rgba(255,255,255,0.2);
 }
 
 .chart-wrapper {
@@ -714,12 +723,14 @@ body {
     background-color: rgba(255, 255, 255, 0);
   }
   100% {
-    background-color: rgba(255, 255, 255, 0.2);
+    // background-color: rgba(255, 255, 255, 1);
+    background-color: black;
   }
 }
 
 .item-title {
-  color: rgba(255, 255, 255, 0.6);
+  // color: rgba(255, 255, 255, 0.6);
+  color: #B3B3B3;
 }
 
 
@@ -753,7 +764,7 @@ body {
 .skills-card {
   width: 110px !important;
   height: 100px !important;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 i.selected {
@@ -948,6 +959,10 @@ div.selected {
 
 @media  screen and (max-width: 800px) {
 
+  .chartjs-size-monitor {
+    position: relative;
+  }
+
   .back, .front, .innovation, .teamwork {
     height: 60px !important;
     width: 60px !important;
@@ -971,6 +986,9 @@ div.selected {
   #myChart2 {
     // height: 36vh !important;
     // padding-top: 75px;
+    position: absolute;
+    // bottom: 24px;
+    bottom: 40px;
   }
 
   .item-wrapper.removeClass {
@@ -986,18 +1004,55 @@ div.selected {
     z-index: 240;
     width: 100%;
     height: 7vh;
-    background: #303030e8;
+    // background: #303030e8;
+    background: #B3B3B3;
     position: fixed;
     bottom: 0;
   }
 
   #widget-container {
-    bottom: 23px;
-    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506102/infos.svg);
+    bottom: 29px;
+    left: calc(50% - 33px);
+    // background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506102/infos.svg);
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784143/plus_1.png);
   }
 
+  .footer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    // background-color: red;
+  }
+
+  .footer-left, .footer-right {
+    width: 50%;
+    display: flex;
+  }
+
+  .footer-right {
+    justify-content: flex-end;
+  }
+
+  .footer-left>div, .footer-right>div {
+    width: 40px;
+    height: 80%;
+    // background: red;
+    margin: auto 20px;
+    font-size: 30px;
+    display: flex;
+    color: #171616;
+  }
+
+  .footer-left>div>i, .footer-right>div>i {
+    margin: auto;
+  }
+
+
+
   #widget-close {
-    bottom: 23px;
+    bottom: 29px;
+    left: calc(50% - 33px);
   }
 
   .widget-mail {
@@ -1317,13 +1372,97 @@ div.selected {
 
 /*-----------Phones-----------------*/
 
-/*@media (max-height: 811px) and (max-width: 374px) {
-  .name {
-    background-size: cover;
+@media (max-height: 811px) and (max-width: 374px) {
+
+  #widget-container {
+    bottom: 16px;
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784143/plus_1.png);
   }
-  #banner {
-    background-color: red;
+
+  #widget-close {
+    bottom: 16px;
   }
+
+  #myChart2 {
+    position: absolute;
+    bottom: 16px;
+  }
+
+  body {
+    // opacity: 0.5;
+  }
+
 }
-*/
+
+  @media (max-height: 738px) and (min-height: 736px) and (max-width: 415px) and (min-width: 413px) {
+
+  #widget-container {
+    bottom: 23px;
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784143/plus_1.png);
+  }
+
+  #widget-close {
+    bottom: 23px;
+  }
+
+  #myChart2 {
+    position: absolute;
+    bottom: 16px;
+  }
+
+  body {
+    // opacity: 0.5;
+  }
+
+}
+
+@media (max-height: 668px) and (max-width: 376px) {
+
+  #widget-container {
+    bottom: 19px;
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784143/plus_1.png);
+  }
+
+  #widget-close {
+    bottom: 19px;
+  }
+
+  #myChart2 {
+    position: absolute;
+    bottom: 17px;
+  }
+
+  body {
+    // opacity: 0.5;
+  }
+
+}
+
+
+  @media (max-height: 731px) and (min-height: 729px) and (max-width: 412px) and (min-width: 410px) {
+
+  #widget-container {
+    bottom: 23px;
+    background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784143/plus_1.png);
+  }
+
+  #widget-close {
+    bottom: 23px;
+  }
+
+  #myChart2 {
+    position: absolute;
+    bottom: 16px;
+  }
+
+  body {
+    // opacity: 0.5;
+  }
+
+}
+
+
+
+
+
 /*---------------- END @media--------------------------------*/
