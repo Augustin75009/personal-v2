@@ -1029,6 +1029,28 @@ div.selected {
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553853312/plus_3.png);
   }
 
+  #widget-close {
+    height: 54px;
+    width: 54px;
+    bottom: 29px;
+    left: calc(50% - 26px);
+  }
+
+  #widget-mail {
+  bottom: 29px;
+  left: calc(24px);
+}
+
+#widget-phone {
+  bottom: 29px;
+  left: calc(24px);
+}
+
+#widget-cv {
+  bottom: 29px;
+  left: calc(24px);
+}
+
   .footer {
     display: flex;
     height: 100%;
@@ -1062,17 +1084,11 @@ div.selected {
   }
 
 
-
-  #widget-close {
-    bottom: 29px;
-    left: calc(50% - 33px);
-  }
-
-  .widget-mail {
-    visibility: visible !important;
-    z-index: 1000;
-    left: 200;
-  }
+  // .widget-mail {
+  //   visibility: visible !important;
+  //   z-index: 1000;
+  //   left: 200;
+  // }
 
   .container-scroll {
     display: none;
@@ -1176,7 +1192,7 @@ div.selected {
 
   100% {
     bottom: 102;
-    left: 36;
+    left: 24px;
     visibility: visible;
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506121/gmail.svg);
     background-size: cover;
@@ -1199,7 +1215,7 @@ div.selected {
 
   100% {
     bottom: 152;
-    left: 36;
+    left: 24px;
     visibility: visible;
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506139/phone-circle.svg);
     background-size: cover;
@@ -1223,7 +1239,7 @@ div.selected {
 
   100% {
     bottom: 202;
-    left: 36;
+    left: 24px;
     visibility: visible;
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506156/document.svg);
     background-size: cover;
