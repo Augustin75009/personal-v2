@@ -20,16 +20,16 @@ window.addEventListener("scroll", function() {
 
 window.addEventListener("scroll", function() {
   if (window.scrollY > (height - 50)) {
-    document.querySelector(".progress-div-second").style.background = "white";
+    document.querySelector(".progress-div-second").style.background = "rgba(255, 255, 255, 0.3)";
   }
   if (window.scrollY > 2 * (height - 50)) {
-    document.querySelector(".progress-div-third").style.background = "white";
+    document.querySelector(".progress-div-third").style.background = "rgba(255, 255, 255, 0.3)";
   }
   if (window.scrollY < (height - 50)) {
-    document.querySelector(".progress-div-second").style.background = "rgba(220, 220, 220, 1)";
+    document.querySelector(".progress-div-second").style.background = "rgba(255, 255, 255, 0.3)";
   }
   if (window.scrollY < 2 * (height - 50)) {
-    document.querySelector(".progress-div-third").style.background = "rgba(220, 220, 220, 1)";
+    document.querySelector(".progress-div-third").style.background = "rgba(255, 255, 255, 0.3)";
   }
 });
 

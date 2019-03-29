@@ -322,9 +322,8 @@ body {
 
 .hr {
   width: 10%;
-  border-top: 2px solid #eee;
+  border-top: 3px solid rgba(67, 238, 206, 0.7);
 }
-
 
 .skills-interests>img {
   margin-left: 20px;
@@ -338,53 +337,58 @@ body {
 /* ---------------widget-----------------*/
 .container-scroll {
   display: flex;
-  height: 3px;
-  transform: rotate(90deg) translateY(130px);
-  width: 400px;
+  height: 2px;
+  transform: rotate(90deg);
+  width: calc(100vh);
+  // width: 400px;
   position: fixed;
+  left: calc(-50vh + 35px);
   top: 50vh;
   z-index: 10000;
 }
 
 .blue-scroll {
   width: 1px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .grey-scroll {
   width: calc(50vh - 1px);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(60, 60, 60, 1);
 }
 
 .progress-div-first, .progress-div-second, .progress-div-third {
-  width: 9px;
+  width: 1px;
   height: 9px;
-  margin-left: -4px;
+  margin-left: -2px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   text-align: center;
   cursor: pointer;
 }
 
 .progress-div-first {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: -3px;
-  left: 1%;
+  top: -4px;
+  left: 0.3%;
+  display: none;
 }
 
 .progress-div-second {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: -3px;
+  top: -4px;
   left: 50%;
+  display: none;
 }
 
 .progress-div-third {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: -3px;
+  top: -4px;
   left: 100%;
+  display: none;
 }
 
 
@@ -414,14 +418,29 @@ body {
 
 #widget-container {
   position: fixed;
-  bottom: 56;
-  left: 44;
+  bottom: 48%;
+  left: 15px;
   z-index: 350;
-  height: 54px;
-  width: 54px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
-  background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506102/infos.svg);
+  // background: black;
+  background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553853312/plus_3.png);
   background-size: cover;
+  z-index: 30000;
+}
+
+#widget-close {
+  position: fixed;
+  bottom: 48%;
+  left: 15px;
+  z-index: 3500000001;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  visibility: hidden;
+  color: red;
 }
 
 .footer {
@@ -434,8 +453,8 @@ body {
 
 #widget-mail {
   position: fixed;
-  bottom: 76;
-  left: 50.5;
+  bottom: 48%;
+  left: 15px;
   z-index: 363;
   height: 40px;
   width: 40px;
@@ -446,8 +465,8 @@ body {
 
 #widget-phone {
   position: fixed;
-  bottom: 76;
-  left: 50.5;
+  bottom: 48%;
+  left: 15px;
   z-index: 362;
   height: 40px;
   width: 40px;
@@ -458,8 +477,8 @@ body {
 
 #widget-cv {
   position: fixed;
-  bottom: 76;
-  left: 50.5;
+  bottom: 48%;
+  left: 15px;
   z-index: 361;
   height: 40px;
   width: 40px;
@@ -468,18 +487,6 @@ body {
   opacity: 0.9;
 }
 
-#widget-close {
-  position: fixed;
-  bottom: 56;
-  left: 44;
-  z-index: 352;
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-  cursor: pointer;
-  visibility: hidden;
-  color: red;
-}
 
 
 .widget-mail.show-widget {
@@ -496,8 +503,8 @@ body {
   }
 
   100% {
-    bottom: 132;
-    left: 50.5;
+    bottom: calc(48% - 60px);
+    left: 80px;
     visibility: visible;
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506121/gmail.svg);
     background-size: cover;
@@ -519,8 +526,8 @@ body {
   }
 
   100% {
-    bottom: 182;
-    left: 50.5;
+    bottom: 48%;
+    left: 80px;
     visibility: visible;
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506139/phone-circle.svg);
     background-size: cover;
@@ -543,8 +550,8 @@ body {
   }
 
   100% {
-    bottom: 232;
-    left: 50.5;
+    bottom: calc(48% + 60px);
+    left: 80px;
     visibility: visible;
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506156/document.svg);
     background-size: cover;
@@ -563,6 +570,7 @@ body {
     visibility: visible;
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506112/close3.svg);
     background-size: cover;
+    z-index: 10000000;
   }
 
   100% {
@@ -570,6 +578,7 @@ body {
     visibility: visible;
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506112/close3.svg);
     background-size: cover;
+    z-index: 10000000;
     }
   }
 
@@ -714,7 +723,8 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
   }
   100% {
-    background-color: rgba(255, 255, 255, 0);
+    // background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0,0,0,0.99);
       }
 }
 
@@ -724,7 +734,7 @@ body {
   }
   100% {
     // background-color: rgba(255, 255, 255, 1);
-    background-color: black;
+    background-color: rgba(0,0,0,0.99);
   }
 }
 
@@ -1011,8 +1021,10 @@ div.selected {
   }
 
   #widget-container {
+    height: 54px;
+    width: 54px;
     bottom: 29px;
-    left: calc(50% - 33px);
+    left: calc(50% - 26px);
     // background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506102/infos.svg);
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553853312/plus_3.png);
   }
@@ -1039,7 +1051,7 @@ div.selected {
     height: 80%;
     // background: red;
     margin: auto 20px;
-    font-size: 30px;
+    font-size: 27px;
     display: flex;
     color: #171616;
     opacity: 0.4;
@@ -1231,7 +1243,7 @@ div.selected {
 
 @media  screen and (max-height: 800px) {
   .container-scroll {
-    top: 40vh;
+    // top: 40vh;
   }
 }
 
