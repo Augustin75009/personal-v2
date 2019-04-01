@@ -249,13 +249,13 @@ body {
   cursor: pointer;
 }
 
-.item-wrapper.addClass {
-  animation: wrapperAddOpacity 0.9s forwards;
-}
+// .item-wrapper.addClass {
+//   animation: wrapperAddOpacity 0.9s forwards;
+// }
 
-.item-wrapper.removeClass {
-  animation: wrapperRemoveOpacity 0.9s forwards
-}
+// .item-wrapper.removeClass {
+//   animation: wrapperRemoveOpacity 0.9s forwards
+// }
 
 
 .second-card.addOpacity {
@@ -454,6 +454,7 @@ body {
 #widget-mail {
   position: fixed;
   bottom: 48%;
+  // bottom: 60%;
   left: 15px;
   z-index: 363;
   height: 40px;
@@ -466,6 +467,7 @@ body {
 #widget-phone {
   position: fixed;
   bottom: 48%;
+  // bottom: 60%;
   left: 15px;
   z-index: 362;
   height: 40px;
@@ -478,6 +480,7 @@ body {
 #widget-cv {
   position: fixed;
   bottom: 48%;
+  // bottom: 60%;
   left: 15px;
   z-index: 361;
   height: 40px;
@@ -501,6 +504,7 @@ body {
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506121/gmail.svg);
     background-size: cover;
   }
+
 
   100% {
     bottom: calc(48% - 60px);
@@ -719,7 +723,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
-  animation-iteration-count: 1;
+  // animation-iteration-count: 1;
 }
 
 
@@ -811,8 +815,8 @@ div.selected {
   }
 
 .front {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553532140/web.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -820,8 +824,8 @@ div.selected {
 }
 
 .back {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553532294/data.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -829,8 +833,8 @@ div.selected {
 }
 
 .innovation {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553531296/innovation.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -838,8 +842,8 @@ div.selected {
 }
 
 .teamwork {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553532088/team.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1007,7 +1011,7 @@ div.selected {
   }
 
   .item-wrapper.removeClass {
-    animation: wrapperAddOpacity 0.9s forwards;
+    // animation: wrapperAddOpacity 0.9s forwards;
     // background-color: rgba(255, 255, 255, 0.2) !important;
   }
 
@@ -1019,8 +1023,9 @@ div.selected {
     z-index: 240;
     width: 100%;
     height: 7vh;
-    // background: #303030e8;
-    background: #B3B3B3;
+    background: black;
+    border: solid 1px white;
+    // background: #B3B3B3;
     position: fixed;
     bottom: 0;
   }
@@ -1326,7 +1331,7 @@ div.selected {
   }
 
   .item-wrapper.removeClass {
-    animation: wrapperAddOpacity 0.9s forwards;
+    // animation: wrapperAddOpacity 0.9s forwards;
     // background-color: rgba(255, 255, 255, 0.2) !important;
   }
 
@@ -1453,13 +1458,17 @@ div.selected {
 
 @media (max-height: 668px) and (max-width: 376px) {
 
+  .link {
+    font-size: 24px !important;
+  }
+
   #widget-container {
-    bottom: 19px;
+    bottom: 18px;
     // background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553851525/plus_3.png);
   }
 
   #widget-close {
-    bottom: 19px;
+    bottom: 18px;
   }
 
   #myChart2 {

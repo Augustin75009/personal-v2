@@ -1,37 +1,37 @@
 var height = window.top.innerHeight;
 
 
-window.addEventListener("scroll", function() {
-  if (disableScroll == true) {
-    if ((window.scrollY) > 2 * (height - 50)) {
-      document.getElementById("second-card").classList.add("addOpacity");
-      document.getElementById("second-card").classList.remove("RemoveOpacity");
-      document.querySelector(".item-wrapper").classList.add("addClass");
-      document.querySelector(".item-wrapper").classList.remove("removeClass");
-    }
-    if ((window.scrollY) < 2 * (height - 50)) {
-      document.getElementById("second-card").classList.remove("addOpacity");
-      document.getElementById("second-card").classList.add("RemoveOpacity");
-      document.querySelector(".item-wrapper").classList.remove("addClass");
-      document.querySelector(".item-wrapper").classList.add("removeClass");
-    }
-  }
-});
+// window.addEventListener("scroll", function() {
+//   if (disableScroll == true) {
+//     if ((window.scrollY) > 2 * (height - 50)) {
+//       document.getElementById("second-card").classList.add("addOpacity");
+//       document.getElementById("second-card").classList.remove("RemoveOpacity");
+//       document.querySelector(".item-wrapper").classList.add("addClass");
+//       document.querySelector(".item-wrapper").classList.remove("removeClass");
+//     }
+//     if ((window.scrollY) < 2 * (height - 50)) {
+//       document.getElementById("second-card").classList.remove("addOpacity");
+//       document.getElementById("second-card").classList.add("RemoveOpacity");
+//       document.querySelector(".item-wrapper").classList.remove("addClass");
+//       document.querySelector(".item-wrapper").classList.add("removeClass");
+//     }
+//   }
+// });
 
-window.addEventListener("scroll", function() {
-  if (window.scrollY > (height - 50)) {
-    document.querySelector(".progress-div-second").style.background = "rgba(255, 255, 255, 0.3)";
-  }
-  if (window.scrollY > 2 * (height - 50)) {
-    document.querySelector(".progress-div-third").style.background = "rgba(255, 255, 255, 0.3)";
-  }
-  if (window.scrollY < (height - 50)) {
-    document.querySelector(".progress-div-second").style.background = "rgba(255, 255, 255, 0.3)";
-  }
-  if (window.scrollY < 2 * (height - 50)) {
-    document.querySelector(".progress-div-third").style.background = "rgba(255, 255, 255, 0.3)";
-  }
-});
+// window.addEventListener("scroll", function() {
+//   if (window.scrollY > (height - 50)) {
+//     document.querySelector(".progress-div-second").style.background = "rgba(255, 255, 255, 0.3)";
+//   }
+//   if (window.scrollY > 2 * (height - 50)) {
+//     document.querySelector(".progress-div-third").style.background = "rgba(255, 255, 255, 0.3)";
+//   }
+//   if (window.scrollY < (height - 50)) {
+//     document.querySelector(".progress-div-second").style.background = "rgba(255, 255, 255, 0.3)";
+//   }
+//   if (window.scrollY < 2 * (height - 50)) {
+//     document.querySelector(".progress-div-third").style.background = "rgba(255, 255, 255, 0.3)";
+//   }
+// });
 
 const initScrollBar = () => {
 
