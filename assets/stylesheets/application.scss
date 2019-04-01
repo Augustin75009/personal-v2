@@ -617,8 +617,13 @@ body {
 
 .content-cv {
   margin-left: 48px;
-  margin-top: 8px;
+  margin-top: -4px;
   visibility: hidden;
+  display: flex;
+}
+
+.content-cv>span {
+  margin-right: 4px;
 }
 
 .content-cv.show-content {
@@ -1075,8 +1080,9 @@ div.selected {
     margin: auto 20px;
     font-size: 27px;
     display: flex;
-    color: #171616;
-    opacity: 0.4;
+    // color: #171616;
+    color: white;
+    opacity: 0.5;
   }
 
   .footer-left>div>i, .footer-right>div>i {
