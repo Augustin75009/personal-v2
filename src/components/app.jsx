@@ -87,32 +87,32 @@ class App extends Component {
           label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
           data: [3, 3, 2, 3, 1],
           type: 'i'
-        },
-        {
-          class: 'devicon-bootstrap-plain-wordmark colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
-          data: [3, 3, 1, 4, 2],
-          type: 'i'
-        },
-        {
-          class: 'devicon-slack-plain',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
-          data: [4, 5, 5, 5, 5],
-          type: 'i'
-        },
-        {
-          class: 'devicon-trello-plain colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
-          data: [3, 4, 3, 3, 2],
-          type: 'i'
         }
+        // {
+        //   class: 'devicon-bootstrap-plain-wordmark colored',
+        //   label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+        //   data: [3, 3, 1, 4, 2],
+        //   type: 'i'
+        // },
+        // {
+        //   class: 'devicon-slack-plain',
+        //   label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+        //   data: [4, 5, 5, 5, 5],
+        //   type: 'i'
+        // },
+        // {
+        //   class: 'devicon-trello-plain colored',
+        //   label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+        //   data: [3, 4, 3, 3, 2],
+        //   type: 'i'
+        // }
       ],
       selectedSkill:
       {
-        class: 'back selected',
-        label: ["Ruby", "Rails", "C/C++", "Matlab", "Python"],
-        data: [4, 4, 5, 3, 3],
-        type: 'div'
+        class: 'devicon-react-original-wordmark colored selected',
+          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          data: [1, 3, 5, 3, 5],
+          type: 'i'
       }
     };
   }

@@ -46,7 +46,7 @@ var myRadarChart2 = new Chart(ctx2, {
       pointLabels: {
         fontSize: 17,
         display: true,
-        fontColor: 'grey'
+        fontColor: 'white'
       }
     }},
 });

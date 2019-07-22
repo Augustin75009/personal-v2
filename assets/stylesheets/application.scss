@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 17px !important;
+  font-size: 16px !important;
 }
 
 .name {
@@ -145,8 +145,7 @@ body {
 
 .first-card {
   background-color: black;
-  background-size: cover;
-  height: 100vh;
+  height: 800px;
   width: 100% !important;
   z-index: 1000000 !important;
   margin: auto;
@@ -204,13 +203,179 @@ body {
   border-radius: 30%;
 }
 
+  .skill-list.smallHeight {
+    display: none;
+  }
+
+
+/*------------works---------------*/
+
+.empty {
+  height: 100px;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.dev-profil {
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  // padding: 40px 60px 0px 100px;
+  height: 450px;
+  position: relative;
+}
+
+.works {
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  // padding: 40px 60px 0px 100px;
+  height: 1050px !important;
+  position: relative;
+}
+
+
+
+.card-with-blur {
+  position: absolute;
+  max-width: 800px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  min-height: 20%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid #818181;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.blur-layer {
+  position: absolute;
+  height: 400px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  filter: blur(5px);
+}
+
+.blur-layer.two {
+  height: 1000px !important;
+}
+
+.blur-layer.three {
+  height: 700px !important;
+}
+
+.card-with-blur > h1 {
+  margin-top: 30px;
+  color: white;
+}
+
+.card-with-blur > p {
+  color: #BCBCBC;
+}
+
+.winning-list {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin: 40px 0px;
+}
+
+.winning-list > div {
+  width: 20%;
+}
+
+.winning-list > div > img {
+  height: 80px;
+  width: 80px;
+}
+
+.winning-list > div > h2 {
+  font-size: 17px;
+}
+
+.winning-list > div > p {
+  color: #BCBCBC;
+}
+
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  margin-top: 80px;
+}
+
+.project-list > a > div {
+  box-shadow: 3px 3px 12px 3px rgba(0, 0, 0, 0.23);
+  border-radius: 8px;
+  background: rgba(250, 250, 250, 0.2);
+  padding: 20px;
+  min-width: 20%;
+  margin: 0px 40px 40px 40px
+}
+
+.project-list > a > div > img {
+  height: 250px;
+}
+
+.project-list > a > div > p {
+  color: white;
+  margin-top: 10px;
+}
+
+.small-img {
+  height: 40px !important;
+}
+
+.last-child {
+  display: flex;
+}
+
+.last-child > div {
+  color: white;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.last-child > a > div > p {
+  margin-top: 10px;
+  color: white;
+}
+
 /*------------second-card---------------*/
 
 .second-card {
-  background-color: #19181E;
-  background-size: cover;
-  height: 100vh;
-  width: 100% !important;
+  position: relative;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  height: 850px;
+  // width: 100% !important;
   z-index: 1;
   margin: auto;
   vertical-align: bottom;
@@ -220,6 +385,12 @@ body {
   text-align: center;
 }
 
+
+.card-with-blur.overflow {
+  // max-height: 80%;
+  overflow: hidden;
+  height: 700px;
+}
 
 .skills-description {
   width: 105%;
@@ -247,16 +418,8 @@ body {
 
 .item-list {
   cursor: pointer;
+  margin-bottom: 60px;
 }
-
-// .item-wrapper.addClass {
-//   animation: wrapperAddOpacity 0.9s forwards;
-// }
-
-// .item-wrapper.removeClass {
-//   animation: wrapperRemoveOpacity 0.9s forwards
-// }
-
 
 .second-card.addOpacity {
   animation: backcolor 0.9s forwards;
@@ -331,6 +494,45 @@ body {
 
 .skills-hobbies>img {
   margin-left: 20px;
+}
+
+
+/* ---------------footer-----------------*/
+
+
+.footer-card {
+  position: relative;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  min-height: 20vh;
+}
+
+.footer-blur-layer {
+  position: absolute;
+  min-height: 20vh;
+  min-width: 100%;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  filter: blur(5px);
+}
+
+
+.footer-with-blur {
+  position: absolute;
+  min-height: 20vh;
+  min-width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 3px solid #818181;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(40px);
+  text-align: center;
 }
 
 
@@ -441,10 +643,6 @@ body {
   cursor: pointer;
   visibility: hidden;
   color: red;
-}
-
-.footer {
-  display: none;
 }
 
 #widget-container:hover {
@@ -693,19 +891,19 @@ body {
 
 
 #myChart2 {
-  margin-top: 20vh;
+  // margin-top: 20vh;
   // box-shadow: inset 0px 0px 138px 9px rgba(255,255,255,0.2);
-  // padding: 4px;
+  margin: 40px 0px;
 }
 
 .render-wrapper {
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  flex-direction: column;
+  // height: 100vh;
 }
 
 .render-wrapper > .render-content {
-  flex: 2;
+  flex: 1;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -719,7 +917,7 @@ body {
 }
 
 .render-wrapper > .item-wrapper {
-  flex: 1;
+  flex: 2;
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
@@ -750,6 +948,7 @@ body {
 .item-title {
   // color: rgba(255, 255, 255, 0.6);
   color: #B3B3B3;
+  display: none;
 }
 
 
@@ -771,7 +970,7 @@ body {
 
 .skill-list {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -851,7 +1050,6 @@ div.selected {
 }
 
 
-
 @media (max-width: 1050px) {
 
   #chart-container {
@@ -876,9 +1074,9 @@ div.selected {
   }
 
 
-  .skills-card>i {
-    font-size: 65px
-  }
+  // .skills-card>i {
+  //   font-size: 65px;
+  // }
 
   .skills-description {
     width: 100%;
@@ -917,9 +1115,9 @@ div.selected {
     flex-direction: column;
   }
 
-  .skills-card>i {
-    font-size: 90px
-  }
+  // .skills-card>i {
+  //   font-size: 70px
+  // }
   .skills-description {
       width: 100%;
   }
@@ -946,10 +1144,10 @@ div.selected {
     display: flex;
   }
 
-  .skills-card>i {
-    font-size: 60px;
-    margin: auto;
-  }
+  // .skills-card>i {
+  //   font-size: 60px;
+  //   margin: auto;
+  // }
 
   .skills-description {
     width: 100%;
@@ -978,25 +1176,63 @@ div.selected {
 
 @media  screen and (max-width: 800px) {
 
+  .name {
+    width: 125% !important;
+    background-size: 164% !important;
+    position: absolute !important;
+    left: -100px !important;
+}
+
+  .blur-layer {
+    height: 600px;
+  }
+
+  .project-list > a > div {
+    width: 80%;
+    margin: 20px auto;
+}
+
+  .dev-profil {
+    height: 700px;
+  }
+
+  .winning-list {
+    flex-direction: column;
+
+    div {
+      margin: auto;
+      width: 60% !important;
+    }
+  }
+
+  .card-with-blur.overflow {
+    height: 650px !important;
+  }
+
+  .card-with-blur, .blur-layer {
+    width: 100% !important;
+    right: 5% !important;
+  }
+
   .chartjs-size-monitor {
     position: relative;
   }
 
   .back, .front, .innovation, .teamwork {
-    height: 60px !important;
-    width: 60px !important;
+    height: 40px !important;
+    width: 40px !important;
     margin: auto;
   }
 
-  .skills-card {
-    height: 70px !important;
-    width: 70px !important;
-    margin: 8px !important;
-  }
+  // .skills-card {
+  //   height: 70px !important;
+  //   width: 70px !important;
+  //   margin: 8px !important;
+  // }
 
-  .item-list {
-    padding: 0px 0px 80px 0px;
-  }
+  // .item-list {
+  //   padding: 0px 0px 80px 0px;
+  // }
 
   .copied-box {
     margin-left: 25% !important;
@@ -1005,9 +1241,9 @@ div.selected {
   #myChart2 {
     // height: 36vh !important;
     // padding-top: 75px;
-    position: absolute;
+    // position: absolute;
     // bottom: 24px;
-    bottom: 40px;
+    // bottom: 40px;
   }
 
   .item-wrapper.removeClass {
@@ -1023,11 +1259,12 @@ div.selected {
     z-index: 240;
     width: 100%;
     height: 7vh;
-    background: black;
-    border-top: solid 1px white;
+    // background: black;
+    // border-top: solid 1px white;
     // background: #B3B3B3;
     position: fixed;
     bottom: 0;
+    // right: 10;
   }
 
   #widget-container {
@@ -1035,6 +1272,7 @@ div.selected {
     width: 54px;
     bottom: 29px;
     left: calc(50% - 26px);
+    // right: 200px !important;
     // background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553506102/infos.svg);
     background-image: url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1553853312/plus_3.png);
   }
@@ -1062,6 +1300,7 @@ div.selected {
 }
 
   .footer {
+    display: none !important;
     display: flex;
     height: 100%;
     width: 100%;
@@ -1120,11 +1359,11 @@ div.selected {
   .skill-list {
   }
 
-  .item-selected {
-    height: 100px;
-    width: 100%;
-    margin: 0px;
-  }
+  // .item-selected {
+  //   height: 100px;
+  //   width: 100%;
+  //   margin: 0px;
+  // }
 
   // div.selected {
   //   height: 100px;
@@ -1152,19 +1391,19 @@ div.selected {
     padding: 6px 6px;
   }
 
-  .avatar-icon>img {
-    height: 100px !important;
-    width: 100px !important;
-    border-radius: 50%;
-    border: solid 3px white;
-  }
+  // .avatar-icon>img {
+  //   height: 100px !important;
+  //   width: 100px !important;
+  //   border-radius: 50%;
+  //   border: solid 3px white;
+  // }
 
-  .name {
-    width: 150% !important;
-    background-size: 150% !important;
-    position: absolute !important;
-    left: -200px !important;
-  }
+  // .name {
+  //   width: 100% !important;
+  //   background-size: 150% !important;
+  //   position: absolute !important;
+  //   left: -200px !important;
+  // }
 
   .skills-selector {
     width: 100%;
@@ -1259,18 +1498,87 @@ div.selected {
 }
 
 
-@media  screen and (max-width: 800px) {
-    #myChart2 {
-    // height: 37vh !important;
-    // padding-top: 75px;
-    margin-top: 24px !important;
+@media (max-width: 550px) {
+  .project-list > a > div > img {
+    height: 150px;
+  }
+  .blur-layer.two {
+    height: 800px !important;
+  }
+  .blur-layer.one {
+    height: 730px !important;
+  }
+  .works {
+    height: 900px !important;
+  }
+
+  .dev-profil {
+    height: 700px;
+  }
+  .card-with-blur.overflow {
+    height: 450px !important;
+  }
+  .blur-layer.three {
+    height: 450px !important;
+  }
+  .second-card {
+    height: 550px
   }
 }
 
+@media (max-width: 500px) {
+  .project-list > a > div > img {
+    height: 150px;
+  }
+  .blur-layer.two {
+    height: 800px !important;
+  }
+  .blur-layer.one {
+    height: 730px !important;
+  }
+  .works {
+    height: 900px !important;
+  }
 
-@media  screen and (max-height: 800px) {
-  .container-scroll {
-    // top: 40vh;
+  .dev-profil {
+    height: 750px;
+  }
+  .card-with-blur.overflow {
+    height: 450px !important;
+  }
+  .blur-layer.three {
+    height: 450px !important;
+  }
+  .second-card {
+    height: 550px
+  }
+}
+
+@media (max-width: 400px) {
+  .project-list > a > div > img {
+    height: 150px;
+  }
+  .blur-layer.two {
+    height: 800px !important;
+  }
+  .blur-layer.one {
+    height: 730px !important;
+  }
+  .works {
+    height: 900px !important;
+  }
+
+  .dev-profil {
+    height: 800px;
+  }
+  .card-with-blur.overflow {
+    height: 450px !important;
+  }
+  .blur-layer.three {
+    height: 450px !important;
+  }
+  .second-card {
+    height: 550px
   }
 }
 
@@ -1423,10 +1731,10 @@ div.selected {
     bottom: 16px;
   }
 
-  #myChart2 {
-    position: absolute;
-    bottom: 16px;
-  }
+  // #myChart2 {
+  //   position: absolute;
+  //   bottom: 16px;
+  // }
 
   body {
     // opacity: 0.5;
@@ -1471,10 +1779,10 @@ div.selected {
     bottom: 18px;
   }
 
-  #myChart2 {
-    position: absolute;
-    bottom: 17px;
-  }
+  // #myChart2 {
+  //   position: absolute;
+  //   bottom: 17px;
+  // }
 
   body {
     // opacity: 0.5;
@@ -1494,10 +1802,10 @@ div.selected {
     bottom: 23px;
   }
 
-  #myChart2 {
-    position: absolute;
-    bottom: 16px;
-  }
+  // #myChart2 {
+  //   position: absolute;
+  //   bottom: 16px;
+  // }
 
   body {
     // opacity: 0.5;

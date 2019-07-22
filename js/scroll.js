@@ -48,6 +48,7 @@ document.addEventListener('scroll', (event) => {
     const hgs = hg.toString() + '%';
     blueScroll.style.width = hs;
     greyScroll.style.width = hgs;
+
   });
 };
 
