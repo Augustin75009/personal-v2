@@ -4,9 +4,9 @@ var myRadarChart2 = new Chart(ctx2, {
   type: 'radar',
   data: {
     labels:
-      ["Ruby", "Rails", "C/C++", "Matlab", "Python"],
+      ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
     datasets: [{
-      data: [5, 4, 3, 2, 3],
+      data: [1, 3, 5, 3, 2],
       borderWidth: 1,
       borderColor: 'rgba(67, 238, 206, 0.5)',
       // borderColor: 'rgba(65, 156, 255, 0)',
@@ -30,12 +30,12 @@ var myRadarChart2 = new Chart(ctx2, {
         color: "#FFFFFF",
         gridLines: {
           display: true,
-          color: 'rgba(220, 220, 220, 0.3)'
+          color: 'rgba(220, 220, 220, 0.6)'
         }
       }],
       gridLines: {
         display: true,
-        color: "rgba(220, 220, 220, 0.3)"
+        color: "rgba(220, 220, 220, 0.4)"
       },
       ticks: {
         beginAtZero: true,
@@ -46,7 +46,7 @@ var myRadarChart2 = new Chart(ctx2, {
       pointLabels: {
         fontSize: 17,
         display: true,
-        fontColor: 'white'
+        fontColor: 'rgba(220, 220, 220, 0.6)'
       }
     }},
 });

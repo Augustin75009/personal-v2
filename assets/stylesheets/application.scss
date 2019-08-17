@@ -128,8 +128,11 @@ body {
 }
 
 .banner {
-  background: black;
-  // background-size: cover;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
   height: 100vh;
   width: 100% !important;
   position: relative;
@@ -144,7 +147,11 @@ body {
 }
 
 .first-card {
-  background-color: black;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
   height: 800px;
   width: 100% !important;
   z-index: 1000000 !important;
@@ -168,7 +175,7 @@ body {
   height: 180px;
   width: 160px;
   border-radius: 50%;
-  border: solid 6px #ffffff57;
+  border: solid 3px black;
 }
 
 .links {
@@ -212,7 +219,7 @@ body {
 
 .empty {
   height: 100px;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -220,7 +227,7 @@ body {
 }
 
 .dev-profil {
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -231,7 +238,7 @@ body {
 }
 
 .works {
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -269,7 +276,7 @@ body {
   margin-right: auto;
   left: 0;
   right: 0;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -312,6 +319,7 @@ body {
 
 .winning-list > div > h2 {
   font-size: 17px;
+  color: white;
 }
 
 .winning-list > div > p {
@@ -369,7 +377,7 @@ body {
 
 .second-card {
   position: relative;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -465,17 +473,21 @@ body {
 }
 
 .text-animated {
+  font-size: 17px;
   text-indent: 10px;
   text-justify: inter-character;
+  text-shadow: 1px 2px 2px black;
 }
 
 
 .my-description>h3 {
+  text-shadow: 1px 2px 4px black;
   font-size: 28px;
   text-align: center;
 }
 
 .wagon-batch {
+  text-shadow: 1px 2px 3px black;
   text-align: center;
 }
 
@@ -502,7 +514,7 @@ body {
 
 .footer-card {
   position: relative;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -514,7 +526,7 @@ body {
   position: absolute;
   min-height: 20vh;
   min-width: 100%;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1563778875/earth.jpg);
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;

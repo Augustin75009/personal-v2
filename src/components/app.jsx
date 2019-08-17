@@ -22,7 +22,7 @@ class App extends Component {
         },
         {
           class: 'teamwork',
-          label: ["Altruisme", "Com'", "Partage", "Pédagogie", "Proposition"],
+          label: ["Altruisme", "Com'", "Pédagogie", "Pédagogie", "Proposition"],
           data: [5, 3, 4, 3, 5],
           type: 'div'
         },
@@ -36,73 +36,73 @@ class App extends Component {
       skills: [
         {
           class: 'devicon-react-original-wordmark colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
-          data: [1, 3, 5, 3, 5],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
+          data: [1, 3, 5, 3, 2],
           type: 'i'
         },
         {
           class: 'devicon-ruby-plain-wordmark colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
-          data: [3, 4, 4, 5, 3],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
+          data: [3, 4, 4, 4, 3],
           type: 'i'
         },
         {
           class: 'devicon-rails-plain-wordmark colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
-          data: [3, 4, 4, 5, 3],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
+          data: [3, 4, 4, 4, 3],
           type: 'i'
         },
         {
           class: 'devicon-python-plain-wordmark colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
           data: [1, 3, 4, 1, 1],
           type: 'i'
         },
         {
           class: 'devicon-css3-plain-wordmark colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
-          data: [3, 3, 5, 5, 5],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
+          data: [3, 3, 5, 4, 5],
           type: 'i'
         },
         {
           class: 'devicon-html5-plain-wordmark colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
-          data: [3, 4, 5, 5, 5],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
+          data: [3, 4, 5, 4, 5],
           type: 'i'
         },
         {
           class: 'devicon-webpack-plain colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
           data: [3, 3, 4, 1, 3],
           type: 'i'
         },
         {
           class: 'devicon-github-plain-wordmark',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
           data: [3, 4, 5, 4, 5],
           type: 'i'
         },
         {
           class: 'devicon-jquery-plain-wordmark colored',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
           data: [3, 3, 2, 3, 1],
           type: 'i'
         }
         // {
         //   class: 'devicon-bootstrap-plain-wordmark colored',
-        //   label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+        //   label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
         //   data: [3, 3, 1, 4, 2],
         //   type: 'i'
         // },
         // {
         //   class: 'devicon-slack-plain',
-        //   label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+        //   label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
         //   data: [4, 5, 5, 5, 5],
         //   type: 'i'
         // },
         // {
         //   class: 'devicon-trello-plain colored',
-        //   label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
+        //   label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
         //   data: [3, 4, 3, 3, 2],
         //   type: 'i'
         // }
@@ -110,8 +110,8 @@ class App extends Component {
       selectedSkill:
       {
         class: 'devicon-react-original-wordmark colored selected',
-          label: ["Expérience", "Niveau", "Interêt", "Partage", "Utilisation"],
-          data: [1, 3, 5, 3, 5],
+          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
+          data: [1, 3, 5, 3, 2],
           type: 'i'
       }
     };
@@ -141,10 +141,10 @@ class App extends Component {
     const script = document.createElement("script");
     const script2 = document.createElement("script");
 
-    script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553794387/chartInit.js";
+    script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566079274/chartInit.js";
     // script.src = "../../js/chartInit.js";
     script.async = false;
-    script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553702953/setClass.js";
+    script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566079315/setClass.js";
     // script2.src = "../../js/setClass.js";
     script2.async = false;
 
