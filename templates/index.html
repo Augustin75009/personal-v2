@@ -17,7 +17,8 @@
 
   </head>
 
-  <body id="scroll">
+  <body id="scroll" class="loading">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
       <div class="banner" id="banner">
           <ul id="scene"  class="scene">
             <!-- <li class="layer2" data-depth="0.15"><div class="layer"></div></li> -->
@@ -36,7 +37,7 @@
             <li class="layer" data-depth="0.05" style="width: 56%; margin: auto; right: 0%">
                 <div class="about">
                   <div class="avatar-icon">
-                    <img src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1564069748/avatar.jpg" alt="Augustin Cousin  augustincousin.pro@gmail.com">
+                    <img id="avatar-icon"  alt="Augustin Cousin  augustincousin.pro@gmail.com">
                   </div>
                   <div class="my-description">
                     <h3>Développeur Full Stack Freelance</h3><br>
@@ -59,17 +60,17 @@
         <div class="card-with-blur">
           <div class="winning-list">
             <div>
-              <img src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/programing.png" alt="">
+              <img id="success1" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/programing.png" alt="">
               <h2>Développement</h2>
               <p>Je développe des sites uniques sur-mesure repondant aux besoins de mes clients</p>
             </div>
             <div>
-              <img src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1553531171/responsive.png" alt="">
+              <img id="success2" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1553531171/responsive.png" alt="">
               <h2>Responsive design</h2>
               <p>Tous mes sites sont pensés pour une utilisation sur mobiles et tablettes, et s'adaptent à toutes les résolutions d'écran</p>
             </div>
             <div>
-              <img src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/together.png" alt="">
+              <img id="success3" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/together.png" alt="">
               <h2>Accompagnement</h2>
               <p>Je gère entièrement mes projets en assurant un accompagnement de qualité</p>
             </div>
@@ -82,20 +83,20 @@
           <div class="project-list">
             <a href="https://www.delaterrealobjet.fr/" target="_blank">
             <div>
-              <img src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1563785381/Responsive_Web_Design_Demo_Template.png" alt="">
+              <img id="work1"  alt="">
               <p>De la terre à l'objet</p>
             </div>
             </a>
             <a href="https://pedalo.olvo.fr" target="_blank">
             <div>
-              <img src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1563785371/Responsive_Web_Design_Demo_Template_1.png" alt="">
+              <img id="work2"  alt="">
               <p>Pedalo.olvo.fr</p>
             </div>
             </a>
             <a href="mailto:augustincousin.pro@gmail.com">
             <div class="last-child">
               <div>
-                <img class="small-img" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784046/plus.png" alt="">
+                <img id="work3" class="small-img"  alt="">
                 <p>Proposer un projet</p>
               </div>
             </div>
@@ -148,10 +149,45 @@
       <div class="copied-box">Copy that, Houston 🛰</div>
       <div class="footer-card">
         <div class="footer-blur-layer"></div>
-        <div class="footer-with-blur"></div>
+        <div class="footer-with-blur"><p style="margin-top: 9vh; color: #BCBCBC;">Conçu par - Augustin Cousin - avec 🥰<br>Tous droits réservés</p></div>
       </div>
     <!-- Script tags -->
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676819/parallax.min.js"></script>
+    <script>
+        const imageUrl = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png";
+        const avatarUrl = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1564069748/avatar.jpg";
+        const work1 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1563785381/Responsive_Web_Design_Demo_Template.png";
+        const work2 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1563785371/Responsive_Web_Design_Demo_Template_1.png";
+        const work3 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784046/plus.png";
+        // const success1 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/programing.png";
+        // const success2 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1553531171/responsive.png";
+        // const success3 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/together.png";
+        let bgElement = document.querySelector("body");
+        let avatarElement = document.querySelector("#avatar-icon");
+        let getwork1 = document.querySelector("#work1");
+        let getwork2 = document.querySelector("#work2");
+        let getwork3 = document.querySelector("#work3");
+        // let success1 = document.querySelector("#success1");
+        // let success2 = document.querySelector("#success2");
+        // let success3 = document.querySelector("#success3");
+        bgElement.classList.add("loading");
+        let preloaderImg = document.createElement("img");
+        preloaderImg.src = imageUrl;
+
+        preloaderImg.addEventListener('load', (event) => {
+          bgElement.classList.remove("loading");
+          bgElement.classList.add("loaded");
+          // bgElement.style.backgroundImage = `url(${imageUrl})`;
+          avatarElement.src = avatarUrl;
+          getwork1.src = work1;
+          getwork2.src = work2;
+          getwork3.src = work3;
+          // success1.src = success1;
+          // success2.src = success2;
+          // success3.src = success3;
+          preloaderImg = null;
+        });
+    </script>
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676871/init.js"></script>
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676807/Chart.js"></script>
     <!-- <script src="../js/Chart.js" defer ></script> -->

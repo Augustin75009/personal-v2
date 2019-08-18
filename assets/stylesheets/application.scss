@@ -7,6 +7,51 @@ body {
   font-size: 16px !important;
 }
 
+.loading {
+  background: black;
+  .lds-ring {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: black;
+    z-index: 1000;
+  }
+  .lds-ring div {
+    margin: auto;
+    margin-top: 50vh;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
 .name {
   width: 90%;
   height: 600px;
@@ -17,91 +62,91 @@ body {
   background-repeat: no-repeat;
 }
 
-.layer2 {
-  width: 100%;
-  height: 100vh;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990179/layer4.png);
-  position: relative;
-  animation : animatedd 200s;
-  animation-iteration-count: infinite;
-}
+// .layer2 {
+//   width: 100%;
+//   height: 100vh;
+//   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990179/layer4.png);
+//   position: relative;
+//   animation : animatedd 200s;
+//   animation-iteration-count: infinite;
+// }
 
 
-.layer4 {
-  width: 100%;
-  height: 100vh;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990204/layer3.png);
-  position: relative;
-  animation : animatedd 200s;
-  animation-iteration-count: infinite;
-}
+// .layer4 {
+//   width: 100%;
+//   height: 100vh;
+//   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990204/layer3.png);
+//   position: relative;
+//   animation : animatedd 200s;
+//   animation-iteration-count: infinite;
+// }
 
 
-.layer3 {
-  width: 100% !important;
-  height: 100vh;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990224/layer2.png);
-  position: relative;
-  animation : animateD 300s;
-  animation-iteration-count: infinite;
-  opacity: 0.8;
-}
+// .layer3 {
+//   width: 100% !important;
+//   height: 100vh;
+//   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990224/layer2.png);
+//   position: relative;
+//   animation : animateD 300s;
+//   animation-iteration-count: infinite;
+//   opacity: 0.8;
+// }
 
-.layer2bis {
-  width: 100%;
-  height: 100vh;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990179/layer4.png);
-  position: relative;
-  animation : animateD 20s linear;
-  animation-iteration-count: 1;
-}
-
-
-.layer4bis {
-  width: 100%;
-  height: 100vh;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990204/layer3.png);
-  position: relative;
-  animation : animateD 20s linear;
-  animation-iteration-count: 1;
-}
+// .layer2bis {
+//   width: 100%;
+//   height: 100vh;
+//   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990179/layer4.png);
+//   position: relative;
+//   animation : animateD 20s linear;
+//   animation-iteration-count: 1;
+// }
 
 
-.layer3bis {
-  width: 100% !important;
-  height: 100vh;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990224/layer2.png);
-  position: relative;
-  animation : animateD 20s linear;
-  animation-iteration-count: 1;
-  opacity: 0.8;
-}
+// .layer4bis {
+//   width: 100%;
+//   height: 100vh;
+//   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990204/layer3.png);
+//   position: relative;
+//   animation : animateD 20s linear;
+//   animation-iteration-count: 1;
+// }
 
-.astro {
-  width: 100% !important;
-  height: 100vh;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552989816/astro.png);
-  background-size: 35%;
-  position: relative;
-  background-position: 90% 0%;
-  background-repeat: no-repeat;
-  z-index: 10 !important;
-}
 
-.layer {
-  z-index: 100000000000;
-}
+// .layer3bis {
+//   width: 100% !important;
+//   height: 100vh;
+//   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990224/layer2.png);
+//   position: relative;
+//   animation : animateD 20s linear;
+//   animation-iteration-count: 1;
+//   opacity: 0.8;
+// }
 
-.astro2 {
-  width: 100% !important;
-  height: 100vh;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552989816/astro.png);
-  background-size: 35%;
-  position: relative;
-  background-position: 90% 38vh;
-  background-repeat: no-repeat;
-  z-index: 1000000 !important;
-}
+// .astro {
+//   width: 100% !important;
+//   height: 100vh;
+//   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552989816/astro.png);
+//   background-size: 35%;
+//   position: relative;
+//   background-position: 90% 0%;
+//   background-repeat: no-repeat;
+//   z-index: 10 !important;
+// }
+
+// .layer {
+//   z-index: 100000000000;
+// }
+
+// .astro2 {
+//   width: 100% !important;
+//   height: 100vh;
+//   background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552989816/astro.png);
+//   background-size: 35%;
+//   position: relative;
+//   background-position: 90% 38vh;
+//   background-repeat: no-repeat;
+//   z-index: 1000000 !important;
+// }
 
 
 
@@ -270,7 +315,7 @@ body {
 
 .blur-layer {
   position: absolute;
-  height: 400px;
+  height: 364px;
   width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -285,7 +330,7 @@ body {
 }
 
 .blur-layer.two {
-  height: 1000px !important;
+  height: 970px !important;
 }
 
 .blur-layer.three {
@@ -333,7 +378,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   color: white;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .project-list > a > div {

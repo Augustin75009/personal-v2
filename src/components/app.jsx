@@ -7,32 +7,6 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      globalskills: [
-        {
-          class: 'back',
-          label: ["Ruby", "Rails", "C/C++", "Matlab", "Python"],
-          data: [5, 4, 3, 2, 3],
-          type: 'div'
-        },
-        {
-          class: 'front',
-          label: ["Design", "CSS", "HTML", "Responsive", "Javascript"],
-          data: [3, 4, 5, 3, 4],
-          type: 'div'
-        },
-        {
-          class: 'teamwork',
-          label: ["Altruisme", "Com'", "Pédagogie", "Pédagogie", "Proposition"],
-          data: [5, 3, 4, 3, 5],
-          type: 'div'
-        },
-        {
-          class: 'innovation',
-          label: ["Management", "Créativité", "Autonomie", "Mental", "Réactivité"],
-          data: [3, 5, 3, 4, 4],
-          type: 'div'
-        }
-      ],
       skills: [
         {
           class: 'devicon-react-original-wordmark colored',
@@ -88,31 +62,17 @@ class App extends Component {
           data: [3, 3, 2, 3, 1],
           type: 'i'
         }
-        // {
-        //   class: 'devicon-bootstrap-plain-wordmark colored',
-        //   label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
-        //   data: [3, 3, 1, 4, 2],
-        //   type: 'i'
-        // },
-        // {
-        //   class: 'devicon-slack-plain',
-        //   label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
-        //   data: [4, 5, 5, 5, 5],
-        //   type: 'i'
-        // },
-        // {
-        //   class: 'devicon-trello-plain colored',
-        //   label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
-        //   data: [3, 4, 3, 3, 2],
-        //   type: 'i'
-        // }
       ],
       selectedSkill:
       {
         class: 'devicon-react-original-wordmark colored selected',
-          label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
-          data: [1, 3, 5, 3, 2],
-          type: 'i'
+        label: ["Expérience", "Niveau", "Interêt", "Pédagogie", "Utilisation"],
+        data: [1, 3, 5, 3, 2],
+        type: 'i'
+      },
+      img:
+      {
+        status: 'loading'
       }
     };
   }
@@ -137,6 +97,14 @@ class App extends Component {
   //   });
   // }
 
+  loadedImage = () => {
+    this.setState({
+      img: {
+        status: 'loaded'
+      }
+    })
+  }
+
   componentDidMount () {
     const script = document.createElement("script");
     const script2 = document.createElement("script");
@@ -144,7 +112,7 @@ class App extends Component {
     script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566079274/chartInit.js";
     // script.src = "../../js/chartInit.js";
     script.async = false;
-    script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566079315/setClass.js";
+    script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566124103/setClass.js";
     // script2.src = "../../js/setClass.js";
     script2.async = false;
 
@@ -162,10 +130,6 @@ class App extends Component {
         </div>
         <div className="item-wrapper">
           <div className="item-list">
-          <h3 className="item-title">Profil</h3>
-            <ItemList skills={this.state.globalskills}
-                      selectSkill={this.selectSkill}
-                      fixedHeight="skill-list smallHeight" />
           <h3 className="item-title">Outils</h3>
             <ItemList skills={this.state.skills}
                       selectSkill={this.selectSkill}

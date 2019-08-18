@@ -1,5 +1,5 @@
 const skillsCard = document.querySelectorAll(".skills-card");
-let initFirst = 4;
+let initFirst = 0;
 skillsCard[initFirst].classList.add("selected");
 
 skillsCard.forEach((skill, index) => {
