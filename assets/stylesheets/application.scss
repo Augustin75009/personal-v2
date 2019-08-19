@@ -219,8 +219,9 @@ body {
 .avatar-icon>img {
   height: 180px;
   width: 160px;
-  border-radius: 50%;
-  border: solid 3px black;
+  border-radius: 40px;
+  border: solid 2px black;
+  background: rgba(250,250,250,0.7);
 }
 
 .links {
@@ -471,7 +472,7 @@ body {
 
 .item-list {
   cursor: pointer;
-  margin-bottom: 60px;
+  margin: auto;
 }
 
 .second-card.addOpacity {
@@ -538,6 +539,7 @@ body {
 
 .avatar-icon {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .hr {
@@ -1149,6 +1151,7 @@ div.selected {
 
     .render-wrapper {
     flex-direction: column;
+    height: -webkit-fill-available;
   }
 
   .render-wrapper > .item-wrapper {
@@ -1406,7 +1409,7 @@ div.selected {
   }
 
   .render-wrapper > .item-wrapper {
-    flex: 4;
+    flex: 0.1;
   }
 
   .render-wrapper > .render-content {
@@ -1580,6 +1583,12 @@ div.selected {
   }
   .second-card {
     height: 550px
+  }
+  #myChart2 {
+    margin: 10px 0px !important;
+  }
+  .skills-card > i {
+    font-size: 80px !important;
   }
 }
 
@@ -1822,6 +1831,9 @@ div.selected {
 }
 
 @media (max-height: 668px) and (max-width: 376px) {
+
+
+
 
   .link {
     font-size: 24px !important;
