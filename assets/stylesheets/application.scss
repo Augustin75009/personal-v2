@@ -73,6 +73,10 @@ body {
   width: 40px;
 }
 
+.arrow-up.opacity {
+  display: none;
+}
+
 .dev-links {
   background: #222831;
   display: inline-flex;
@@ -349,6 +353,10 @@ body {
   flex-direction: column;
   justify-content: space-around;
   padding-bottom: 40px;
+}
+
+.more-infos.opacity {
+  display: none;
 }
 
 .more-infos.slide {

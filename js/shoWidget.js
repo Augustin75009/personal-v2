@@ -14,8 +14,9 @@ const body5 = document.querySelector('.dev-profil');
 const body6 = document.querySelector('#mail');
 const body7 = document.querySelector('.footer-card');
 const body8 = document.querySelector('.dev-links');
+const body9 = document.querySelector('.arrow-up');
+const body10 = document.querySelector('.more-infos');
 const progress = document.querySelector('.container-scroll');
-// var disableScroll = true;
 
 
  widget.addEventListener('click', function() {
@@ -34,13 +35,9 @@ const progress = document.querySelector('.container-scroll');
     body6.classList.add("opacity");
     body7.classList.add("opacity");
     body8.classList.add("opacity");
-    // document.getElementById("second-card").classList.remove("addOpacity");
-    // document.getElementById("second-card").classList.remove("RemoveOpacity");
-    // document.querySelector(".item-wrapper").classList.remove("addClass");
-    // document.querySelector(".item-wrapper").classList.remove("removeClass");
+    body9.classList.add("opacity");
+    body10.classList.add("opacity");
     progress.classList.add("display");
-    // widget.dataset.disableScroll = "true"
-    // disableScroll =false;
 });
 
   widgetClose.addEventListener('click', function() {
@@ -59,10 +56,7 @@ const progress = document.querySelector('.container-scroll');
     body6.classList.remove("opacity");
     body7.classList.remove("opacity");
     body8.classList.remove("opacity");
-    // document.getElementById("second-card").classList.add("addOpacity");
-    // document.getElementById("second-card").classList.remove("RemoveOpacity");
-    // document.querySelector(".item-wrapper").classList.add("addClass");
-    // document.querySelector(".item-wrapper").classList.remove("removeClass");
+    body9.classList.remove("opacity");
+    body10.classList.remove("opacity");
     progress.classList.remove("display");
-    // disableScroll = true;
 });
