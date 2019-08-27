@@ -8,10 +8,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Augustin Cousin</title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
@@ -19,6 +22,15 @@
 
   <body id="scroll" class="loading">
     <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+<!--     <div class="card-with-blur navbar fixed-top">
+      <ul>
+        <li><a href="../assets/CV-Augustin-Cousin.pdf" target="_blank">Curriculum</a></li>
+        <li><a href="#first-card">Profil</a></li>
+        <li><a href="#works">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div> -->
+    <div class="arrow-up"><a href="#"></a></div>
       <div class="banner" id="banner">
           <ul id="scene"  class="scene">
             <!-- <li class="layer2" data-depth="0.15"><div class="layer"></div></li> -->
@@ -27,96 +39,131 @@
             <!-- <li class="astro2" data-depth="0"></li> -->
             <li class="name" data-depth="0.3"></li>
           </ul>
+          <div class="navbar-blur-layer"></div>
+          <div class="card-with-blur navbar">
+            <ul>
+              <li><a href="../assets/CV-Augustin-Cousin.pdf" target="_blank">Curriculum</a></li>
+              <li><a href="#first-card">Profil</a></li>
+              <li><a href="#works">Projets</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+
+          </div>
       </div>
       <div class="first-card" id="first-card">
-        <ul id="scene-skills"  class="scene">
-            <!-- <li class="layer2" data-depth="0.15"><div class="layer"></div></li> -->
-            <!-- <li class="layer3" data-depth="0.2"><div class="layer"></div></li> -->
-            <!-- <li class="layer4" data-depth="0.1"><div class="layer"></div></li> -->
-            <!-- <li class="astro" data-depth="0"><div class="layer"></div></li> -->
-            <li class="layer" data-depth="0.05" style="width: 56%; margin: auto; right: 0%">
-                <div class="about">
-                  <div class="avatar-icon">
-                    <img id="avatar-icon"  alt="Augustin Cousin  augustincousin.pro@gmail.com">
-                  </div>
-                  <div class="my-description">
-                    <h3>Développeur Full Stack Freelance</h3><br>
-                    <p class="text-animated">Ingénieur aéronautique de formation, j’ai élargi mon éventail de compétances avec la formation <strong>@LeWagon</strong>.</p>
-                    <p class="text-animated">Au cours de cette formation intensive, j'ai appris à développer des applications web complexes, en utilisant des technologies innovantes.</p>
-                    <p class="text-animated">J'apprends par ailleurs, à en découvrir de nouvelles: Parallax.js, React.js ou encore Node.js.</p>
-                    <p class="text-animated">Je suis à l'aise avec le Back-end, mais je prends également beaucoup de plaisir à intégrer des sites et à travailler sur le design graphique.</p>
-                  </div>
-                    <hr class="hr">
-                  <div class="wagon-batch">
-                   Proudly did <strong>Batch #201 - Paris</strong> 🇫🇷
-                  </div>
-                </div>
-          </li>
-          </ul>
+        <div class="corner-bottom"></div>
+        <div class="corner-bottom-button"></div>
+        <div class="more-infos">
+          <div class="infos-icon b"></div>
+          <div class="infos-icon d"></div>
+          <div class="infos-icon a"></div>
+          <div class="infos-icon c"></div>
+          <!-- <div class="infos-icon e"></div> -->
+          <!-- <div class="infos-icon f"></div> -->
+        </div>
+        <div class="about">
+          <div class="avatar-icon">
+            <img id="avatar-icon"  alt="Augustin Cousin  augustincousin.pro@gmail.com">
+          </div>
+          <div class="my-description">
+            <!-- <h3>Développeur Full Stack Freelance</h3><br> -->
+            <p class="text-animated">Ingénieur aéronautique de formation, j’ai élargi mon éventail de compétances avec la formation <strong>@LeWagon</strong>. Au cours de cette formation intensive, j'ai appris à développer des applications web complexes, en utilisant des technologies innovantes.</p>
+            <p class="text-animated">J'apprends par ailleurs, à en découvrir de nouvelles: Parallax.js, React.js ou encore Node.js. Je suis à l'aise avec le Back-end, mais je prends également beaucoup de plaisir à intégrer des sites et à travailler sur le design graphique.</p>
+          </div>
+            <hr class="hr">
+          <div class="wagon-batch">
+           Proudly did <strong>Batch #201 - Paris</strong> 🇫🇷
+          </div>
+        </div>
       </div>
-      <!-- <div class="empty"></div> -->
       <div class="dev-profil">
-        <div class="blur-layer one"></div>
-        <div class="card-with-blur">
+        <div class="winning-list-container">
           <div class="winning-list">
             <div>
-              <img id="success1" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/programing.png" alt="">
+              <img id="success1" src="https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_200/v1553532294/data.png" alt="">
               <h2>Développement</h2>
-              <p>Je développe des sites uniques sur-mesure repondant aux besoins de mes clients</p>
+              <p>Des sites uniques sur-mesure repondant aux besoins de mes clients</p>
             </div>
             <div>
-              <img id="success2" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1553531171/responsive.png" alt="">
+              <img id="success2" src="https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_200/v1553532242/coding.png" alt="">
               <h2>Responsive design</h2>
-              <p>Tous mes sites sont pensés pour une utilisation sur mobiles et tablettes, et s'adaptent à toutes les résolutions d'écran</p>
+              <p>Des sites pensés pour s'adapter à toutes les résolutions d'écran</p>
             </div>
             <div>
-              <img id="success3" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/together.png" alt="">
+              <img id="success3" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1553532088/team.png" alt="">
               <h2>Accompagnement</h2>
-              <p>Je gère entièrement mes projets en assurant un accompagnement de qualité</p>
+              <p>Une gestion de projet où le client est accompagné de A à Z</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="works">
-        <div class="blur-layer two"></div>
-        <div class="card-with-blur">
+      <div class="works" id="works">
+        <div class="works-title"><h1>Expériences</h1></div>
+        <div class="works-wrapper" style="">
           <div class="project-list">
             <a href="https://www.delaterrealobjet.fr/" target="_blank">
-            <div>
-              <img id="work1"  alt="">
-              <p>De la terre à l'objet</p>
-            </div>
+              <div class="project-list-wrapper">
+                <div class="project-list-content">
+                  <h2>De la terre à l'objet</h2>
+                  <h4>Developpeur full stack</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam necessitatibus, debitis, fugiat tempora voluptates illum. Ducimus placeat ipsum nam earum incidunt, in. Ex ullam maxime accusantium quod voluptate similique nam.</p> -->
+                  <p>Sur le chemin de la terre à l'objet, je propose des situations de modelage adaptées à la personne. Le site internet à été totalement refondu. Avec notamment l'implémentation d'une gestion de panier. (100% Ruby on rails).</p>
+                </div>
+                <div class="project-list-img">
+                  <img id="work1"  alt="">
+                </div>
+              </div>
             </a>
             <a href="https://pedalo.olvo.fr" target="_blank">
-            <div>
-              <img id="work2"  alt="">
-              <p>Pedalo.olvo.fr</p>
-            </div>
+              <div class="project-list-wrapper">
+                <div class="project-list-content">
+                  <h2>Pedalo (@LeWagon)</h2>
+                  <h4>Developpeur full stack</h4>
+                  <p>Une application web opensource et une API qui permettent de traquer vos livraisons. Elle est connecté à un logiciel de "dispatch" qu'utilise la coopérative de livreur à vélo : Olvo.</p>
+                </div>
+                <div class="project-list-img">
+                  <img id="work2"  alt="">
+                </div>
+              </div>
             </a>
             <a href="mailto:augustincousin.pro@gmail.com">
-            <div class="last-child">
-              <div>
-                <img id="work3" class="small-img"  alt="">
-                <p>Proposer un projet</p>
+              <div class="last-child">
+                <div>
+                  <img id="work3" class="small-img"  alt="">
+                  <p>Proposer un projet</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="second-card" id="second-card" style="width: 600px">
+            <div class="div-relative">
+              <div class="arrow-right"></div>
+              <!-- <div class="arrow-left"></div> -->
+              <div id="root">
               </div>
             </div>
-            </a>
           </div>
         </div>
       </div>
-      <div class="second-card" id="second-card">
-        <div class="blur-layer three"></div>
-        <div class="card-with-blur overflow">
-          <div id="root"></div>
-        </div>
+      <div id="div-map"></div>
+      <div class="dev-links">
+        <a class="github" href="https://github.com/Augustin75009" target="_blank"></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/augustin-cousin-39671088/" target="_blank"></a>
       </div>
-       <div class="container-scroll">
+<!--       <div id="contact">
+        <form action="mail.php" method="GET">
+          <input type="text" name="name" placeholder="Message">
+          <input type="email" name="_replyto" placeholder="Email">
+          <input type="submit" value="Envoyer">
+        </form>
+      </div> -->
+      <div class="container-scroll">
         <div class="blue-scroll"></div>
         <div class="grey-scroll"></div>
         <div class="progress-div-first"></div>
         <div class="progress-div-second"></div>
         <div class="progress-div-third"></div>
-       </div>
+      </div>
       <div class="widget">
         <div id="widget-container">
           <div id="widget-mail" class="widget-mail">
@@ -148,16 +195,16 @@
       </div>
       <div class="copied-box">Copy that, Houston 🛰</div>
       <div class="footer-card">
-        <div class="footer-blur-layer"></div>
-        <div class="footer-with-blur"><p style="margin-top: 9vh; color: #BCBCBC;">Conçu par - Augustin Cousin - avec 🥰<br>Tous droits réservés</p></div>
+        <!-- <div class="footer-blur-layer"></div> -->
+        <div class="footer"><p>Conçu par - Augustin Cousin - avec ❤️<br>Tous droits réservés</p></div>
       </div>
     <!-- Script tags -->
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676819/parallax.min.js"></script>
     <script>
         const imageUrl = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png";
-        const avatarUrl = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566235454/avatar2.png";
-        const work1 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1563785381/Responsive_Web_Design_Demo_Template.png";
-        const work2 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1563785371/Responsive_Web_Design_Demo_Template_1.png";
+        const avatarUrl = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1566472611/Capture_d_e%CC%81cran_2019-08-22_a%CC%80_13.16.29.png";
+        const work1 = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1563785381/Responsive_Web_Design_Demo_Template.png";
+        const work2 = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1563785371/Responsive_Web_Design_Demo_Template_1.png";
         const work3 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784046/plus.png";
         // const success1 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/programing.png";
         // const success2 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1553531171/responsive.png";
@@ -188,14 +235,21 @@
           preloaderImg = null;
         });
     </script>
-    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676871/init.js"></script>
+    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566909799/init.js"></script>
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676807/Chart.js"></script>
     <!-- <script src="../js/Chart.js" defer ></script> -->
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676857/copy.js" defer></script>
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566079372/parallaxScroll.js" defer></script>
-    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1563816096/shoWidget.js" defer></script>
+    <!-- <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566909040/shoWidget.js"></script> -->
+    <script src="../js/shoWidget.js"></script>
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1554125262/scroll.js" defer></script>
+    <!-- <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=261&f=1"></script> -->
+    <!-- <script charset='UTF-8' src='http://www.meteofrance.com/mf3-rpc-portlet/rest/vignettepartenaire/751010/type/VILLE_FRANCE/size/PORTRAIT_VIGNETTE' type='text/javascript'></script> -->
+    <!-- <div style="text-align:center;padding:1em 0;"> <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/fr/city/2988507"><span style="color:gray;">Heure actuelle</span><br />Paris, France</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=fr&size=small&timezone=Europe%2FParis" width="100%" height="90" frameborder="0" seamless></iframe> </div> -->
     <!-- <script src="../js/scroll.js" defer></script> -->
+    <script>
+
+    </script>
     </div>
   </body>
 </html>

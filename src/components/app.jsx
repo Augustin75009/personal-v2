@@ -108,16 +108,21 @@ class App extends Component {
   componentDidMount () {
     const script = document.createElement("script");
     const script2 = document.createElement("script");
+    const script3 = document.createElement("script");
 
-    script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566079274/chartInit.js";
+    script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566908796/chartInit.js";
     // script.src = "../../js/chartInit.js";
     script.async = false;
     script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566124103/setClass.js";
     // script2.src = "../../js/setClass.js";
     script2.async = false;
+    script3.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566909906/showArrow.js";
+    // script3.src = "../../js/test.js";
+    script3.async = false;
 
     document.body.appendChild(script);
     document.body.appendChild(script2);
+    document.body.appendChild(script3);
 
   }
   render() {
@@ -130,7 +135,6 @@ class App extends Component {
         </div>
         <div className="item-wrapper">
           <div className="item-list">
-          <h3 className="item-title">Outils</h3>
             <ItemList skills={this.state.skills}
                       selectSkill={this.selectSkill}
                       fixedHeight="skill-list fixedHeight" />

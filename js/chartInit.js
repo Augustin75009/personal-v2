@@ -11,7 +11,7 @@ var myRadarChart2 = new Chart(ctx2, {
       borderColor: 'rgba(67, 238, 206, 0.5)',
       // borderColor: 'rgba(65, 156, 255, 0)',
       // backgroundColor: 'rgba(67, 176, 92, 0.7)'
-      backgroundColor: 'rgba(67, 238, 206, 0.7)'
+      backgroundColor: '#00adb5eb'
       // backgroundColor: 'rgba(65, 156, 255, 0.7)'
     }]
   },
