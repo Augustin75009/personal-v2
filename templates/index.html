@@ -6,6 +6,17 @@
     <meta name="description" content="Augustin Cousin's website">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta name='KEYWORDS' content="Augustin Cousin Portfolio Informatique Analyste Programmeur Developpeur Javascript Web HTML CSS IPSA Blog Android Paris France Developpeur Jquery React ReactJS PHP">
+
+        <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="Augustin Cousin" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="www.augustincousin.com" />
+    <meta property="og:image" content="https://res.cloudinary.com/dw7nokc0j/image/upload/v1566472611/Capture_d_e%CC%81cran_2019-08-22_a%CC%80_13.16.29.png" />
+    <meta property="og:description" content="Developpeur Fullstack" />
+    <meta property="og:site_name" content="AC's Website" />
+
     <title>Augustin Cousin</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/dw7nokc0j/image/upload/v1566926523/favicon.ico">
@@ -58,15 +69,12 @@
           <div class="infos-icon d"></div>
           <div class="infos-icon a"></div>
           <div class="infos-icon c"></div>
-          <!-- <div class="infos-icon e"></div> -->
-          <!-- <div class="infos-icon f"></div> -->
         </div>
         <div class="about">
           <div class="avatar-icon">
             <img id="avatar-icon"  alt="Augustin Cousin  augustincousin.pro@gmail.com">
           </div>
           <div class="my-description">
-            <!-- <h3>Développeur Full Stack Freelance</h3><br> -->
             <p class="text-animated">Ingénieur aéronautique de formation, j’ai élargi mon éventail de compétances avec la formation <strong>@LeWagon</strong>. Au cours de cette formation intensive, j'ai appris à développer des applications web complexes, en utilisant des technologies innovantes.</p>
             <p class="text-animated">J'apprends par ailleurs, à en découvrir de nouvelles: Parallax.js, React.js ou encore Node.js. Je suis à l'aise avec le Back-end, mais je prends également beaucoup de plaisir à intégrer des sites et à travailler sur le design graphique.</p>
           </div>
@@ -106,7 +114,6 @@
                 <div class="project-list-content">
                   <h2>De la terre à l'objet</h2>
                   <h4>Developpeur full stack</h4>
-                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam necessitatibus, debitis, fugiat tempora voluptates illum. Ducimus placeat ipsum nam earum incidunt, in. Ex ullam maxime accusantium quod voluptate similique nam.</p> -->
                   <p>Sur le chemin de la terre à l'objet, je propose des situations de modelage adaptées à la personne. Le site internet à été totalement refondu. Avec notamment l'implémentation d'une gestion de panier. (100% Ruby on rails).</p>
                 </div>
                 <div class="project-list-img">
@@ -206,17 +213,11 @@
         const work1 = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1563785381/Responsive_Web_Design_Demo_Template.png";
         const work2 = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1563785371/Responsive_Web_Design_Demo_Template_1.png";
         const work3 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784046/plus.png";
-        // const success1 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/programing.png";
-        // const success2 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1553531171/responsive.png";
-        // const success3 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566077464/together.png";
         let bgElement = document.querySelector("body");
         let avatarElement = document.querySelector("#avatar-icon");
         let getwork1 = document.querySelector("#work1");
         let getwork2 = document.querySelector("#work2");
         let getwork3 = document.querySelector("#work3");
-        // let success1 = document.querySelector("#success1");
-        // let success2 = document.querySelector("#success2");
-        // let success3 = document.querySelector("#success3");
         bgElement.classList.add("loading");
         let preloaderImg = document.createElement("img");
         preloaderImg.src = imageUrl;
@@ -224,29 +225,21 @@
         preloaderImg.addEventListener('load', (event) => {
           bgElement.classList.remove("loading");
           bgElement.classList.add("loaded");
-          // bgElement.style.backgroundImage = `url(${imageUrl})`;
           avatarElement.src = avatarUrl;
           getwork1.src = work1;
           getwork2.src = work2;
           getwork3.src = work3;
-          // success1.src = success1;
-          // success2.src = success2;
-          // success3.src = success3;
           preloaderImg = null;
         });
     </script>
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566909799/init.js"></script>
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676807/Chart.js"></script>
-    <!-- <script src="../js/Chart.js" defer ></script> -->
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676857/copy.js" defer></script>
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566079372/parallaxScroll.js" defer></script>
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566927104/shoWidget.js"></script>
-    <!-- <script src="../js/shoWidget.js"></script> -->
     <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1554125262/scroll.js" defer></script>
     <!-- <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=261&f=1"></script> -->
     <!-- <script charset='UTF-8' src='http://www.meteofrance.com/mf3-rpc-portlet/rest/vignettepartenaire/751010/type/VILLE_FRANCE/size/PORTRAIT_VIGNETTE' type='text/javascript'></script> -->
-    <!-- <div style="text-align:center;padding:1em 0;"> <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/fr/city/2988507"><span style="color:gray;">Heure actuelle</span><br />Paris, France</a></h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=fr&size=small&timezone=Europe%2FParis" width="100%" height="90" frameborder="0" seamless></iframe> </div> -->
-    <!-- <script src="../js/scroll.js" defer></script> -->
     <script>
 
     </script>
