@@ -109,6 +109,18 @@
         <div class="works-title"><h1>Expériences</h1></div>
         <div class="works-wrapper" style="">
           <div class="project-list">
+            <a href="https://theschoolab.com/" target="_blank">
+              <div class="project-list-wrapper">
+                <div class="project-list-content">
+                  <h2>The Schoolab</h2>
+                  <h4>Intégrateur web</h4>
+                  <p>Schoolab est un Innovation Studio qui qui accompagne la transformation des entreprises et accélère leurs projets d’innovation. Travail réalisé : Intégration des maquettes pour le blog de Schoolab.</p>
+                </div>
+                <div class="project-list-img">
+                  <img id="work0"  alt="">
+                </div>
+              </div>
+            </a>
             <a href="https://www.delaterrealobjet.fr/" target="_blank">
               <div class="project-list-wrapper">
                 <div class="project-list-content">
@@ -210,11 +222,13 @@
     <script>
         const imageUrl = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png";
         const avatarUrl = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1566472611/Capture_d_e%CC%81cran_2019-08-22_a%CC%80_13.16.29.png";
+        const work0 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1567156514/Responsive_Web_Design_Demo_Template_2.png";
         const work1 = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1563785381/Responsive_Web_Design_Demo_Template.png";
         const work2 = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1563785371/Responsive_Web_Design_Demo_Template_1.png";
         const work3 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1553784046/plus.png";
         let bgElement = document.querySelector("body");
         let avatarElement = document.querySelector("#avatar-icon");
+        let getwork0 = document.querySelector("#work0");
         let getwork1 = document.querySelector("#work1");
         let getwork2 = document.querySelector("#work2");
         let getwork3 = document.querySelector("#work3");
@@ -226,6 +240,7 @@
           bgElement.classList.remove("loading");
           bgElement.classList.add("loaded");
           avatarElement.src = avatarUrl;
+          getwork0.src = work0;
           getwork1.src = work1;
           getwork2.src = work2;
           getwork3.src = work3;
