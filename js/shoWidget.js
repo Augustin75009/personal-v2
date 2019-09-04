@@ -1,3 +1,5 @@
+const shoWidget = () => {
+
 const widget = document.querySelector('#widget-container');
 const widgetMail = document.querySelector('#widget-mail');
 const widgetPhone = document.querySelector('#widget-phone');
@@ -60,3 +62,7 @@ const progress = document.querySelector('.container-scroll');
     body10.classList.remove("opacity");
     progress.classList.remove("display");
 });
+
+}
+
+export default shoWidget

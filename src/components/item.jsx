@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import {chartInit, myRadarChart2} from '../../js/chartInit.js';
 
 class Item extends Component {
   picked = (event) => {

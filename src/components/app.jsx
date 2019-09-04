@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Chart from './chart';
 import ItemList from './item_list';
-// import Item from './item';
+import showArrow from '../../js/showArrow.js';
+// import {chartInit, myRadarChart2} from '../../js/chartInit.js';
+import setClass from '../../js/setClass.js';
 
 class App extends Component {
   constructor() {
@@ -97,32 +99,25 @@ class App extends Component {
   //   });
   // }
 
-  loadedImage = () => {
-    this.setState({
-      img: {
-        status: 'loaded'
-      }
-    })
-  }
+  // loadedImage = () => {
+  //   this.setState({
+  //     img: {
+  //       status: 'loaded'
+  //     }
+  //   })
+  // }
 
   componentDidMount () {
     const script = document.createElement("script");
-    const script2 = document.createElement("script");
-    const script3 = document.createElement("script");
 
     script.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566908796/chartInit.js";
     // script.src = "../../js/chartInit.js";
-    script.async = false;
-    script2.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566124103/setClass.js";
-    // script2.src = "../../js/setClass.js";
-    script2.async = false;
-    script3.src = "https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566909906/showArrow.js";
-    // script3.src = "../../js/test.js";
-    script3.async = false;
+    // script.innerHTML = chartInit + 'chartInit()'
 
     document.body.appendChild(script);
-    document.body.appendChild(script2);
-    document.body.appendChild(script3);
+    // chartInit()
+    setClass()
+    showArrow()
 
   }
   render() {

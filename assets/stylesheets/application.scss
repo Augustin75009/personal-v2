@@ -12,7 +12,8 @@
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px !important;
-  background: #f6f6f6;
+  // background: #f6f6f6;
+  background: #222831;
   color: #f6f6f6;
 }
 
@@ -103,13 +104,16 @@ body {
 }
 
 .name {
-  width: 110%;
-  height: 600px;
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990247/name.png);
+  width: 400px;
+  height: 300px;
+  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1567452572/Augustin_Cousin_De%CC%81veloppeur_Full_Stack_1.png);
+  // background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1552990247/name.png);
   position: relative;
   background-size: fill;
   z-index: 200;
   background-repeat: no-repeat;
+  left: 200px !important;
+  top: 300px !important;
 }
 
 // .layer2 {
@@ -223,11 +227,12 @@ body {
 }
 
 .banner {
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
+  // background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1567328926/Anime-logo.svg);
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover !important;
+  // background-size: cover !important;
+  background-size: contain !important;
   height: 100vh;
   width: 100% !important;
   position: relative;
@@ -237,8 +242,39 @@ body {
   overflow: hidden;
 }
 
+.macbook:hover {
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.svg-drop {
+  position: absolute;
+  z-index: 20 !important;
+  top: 60%;
+  left: 20%;
+  animation : svgDrop 1.3s forwards;
+}
+
+@keyframes svgDrop {
+
+  70% {
+   transform: translate(0px,100px);
+   opacity: 0;
+  }
+  100% {
+   opacity: 0;
+   transform: translate(0px,200px);
+  }
+}
+
 .banner img {
   width: 100% !important;
+}
+
+.banner-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .navbar-blur-layer {
@@ -249,11 +285,12 @@ body {
   position: absolute;
   width: 100%;
   filter: blur(7px);
-  background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png);
+  // background : url(https://res.cloudinary.com/dw7nokc0j/image/upload/v1567328926/Anime-logo.svg);
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover !important;
+  // background-size: cover !important;
+  background-size: contain !important;
 }
 
 .navbar {
@@ -283,7 +320,7 @@ body {
         color: white;
       }
       a:hover {
-        text-shadow: 1px 1px 1px #ff8b00;
+        text-shadow: 1px 1px 1px #00adb5;
       }
     }
   }
@@ -513,7 +550,8 @@ body {
   left: 0;
   right: 0;
   min-height: 20%;
-  background: rgba(255, 255, 255, 0.1);
+  // background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   border: 3px solid #818181;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
@@ -558,7 +596,16 @@ body {
   margin-top: 10px;
 }
 
-.winning-list > div > img {
+.winning-img-wrapper {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+.winning-img {
+  position: absolute;
+  left: 0;
   height: 100px;
   width: 100px;
 }
@@ -1377,7 +1424,10 @@ div.selected {
     flex-direction: column-reverse;
   }
 
-
+  .name {
+    left: 150px !important;
+    top: 200px !important;
+  }
 }
 
 
@@ -1442,10 +1492,7 @@ div.selected {
 @media  screen and (max-width: 728px) {
 
   .name {
-    width: 110% !important;
-    background-size: 164% !important;
-    position: absolute !important;
-    left: -140px !important;
+    left: 100px !important;
   }
 
 
@@ -1595,10 +1642,8 @@ div.selected {
 @media (max-width: 576px) {
 
   .name {
-    width: 120% !important;
-    background-size: 164% !important;
-    position: absolute !important;
-    left: -140px !important;
+    left: 10px !important;
+    width: 80% !important;
   }
 
   .arrow-up {

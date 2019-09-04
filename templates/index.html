@@ -41,8 +41,9 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div> -->
-    <div class="arrow-up"><a href="#"></a></div>
+    <div class="arrow-up hidden"><a href="#"></a></div>
       <div class="banner" id="banner">
+          <!-- <img class="banner-img" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1567328926/Anime-logo.svg" alt="" style="height: 100%"> -->
           <ul id="scene"  class="scene">
             <!-- <li class="layer2" data-depth="0.15"><div class="layer"></div></li> -->
             <!-- <li class="layer3" data-depth="0.2"><div class="layer"></div></li> -->
@@ -88,17 +89,26 @@
         <div class="winning-list-container">
           <div class="winning-list">
             <div>
-              <img id="success1" src="https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_200/v1553532294/data.png" alt="">
+              <div class="winning-img-wrapper" id="win1">
+                <img id="success1" class="winning-img" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1567441465/data_2.svg" alt="">
+                <!-- <img id="success1" class="winning-img" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1567441267/Group_5_7__animated.svg" alt=""> -->
+              </div>
               <h2>Développement</h2>
               <p>Des sites uniques sur-mesure repondant aux besoins de mes clients</p>
             </div>
             <div>
-              <img id="success2" src="https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_200/v1553532242/coding.png" alt="">
+              <div class="winning-img-wrapper" id="win2">
+                <img id="success2" class="winning-img" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1567440320/computer.svg" alt="">
+                <!-- <img id="success1" class="winning-img" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1567441267/Group_5_7__animated.svg" alt=""> -->
+              </div>
               <h2>Responsive design</h2>
               <p>Des sites pensés pour s'adapter à toutes les résolutions d'écran</p>
             </div>
             <div>
-              <img id="success3" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1553532088/team.png" alt="">
+              <div class="winning-img-wrapper" id="win3">
+                <img id="success3" class="winning-img" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1567441422/admin_1.svg" alt="">
+                <!-- <img id="success1" class="winning-img" src="https://res.cloudinary.com/dw7nokc0j/image/upload/v1567441267/Group_5_7__animated.svg" alt=""> -->
+              </div>
               <h2>Accompagnement</h2>
               <p>Une gestion de projet où le client est accompagné de A à Z</p>
             </div>
@@ -218,9 +228,8 @@
         <div class="footer"><p>Conçu par - Augustin Cousin - avec ❤️<br>Tous droits réservés</p></div>
       </div>
     <!-- Script tags -->
-    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676819/parallax.min.js"></script>
+    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676807/Chart.js"></script>
     <script>
-        const imageUrl = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1566076125/marc-kleen-ipAHs6Z_1zs-unsplash.png";
         const avatarUrl = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1566472611/Capture_d_e%CC%81cran_2019-08-22_a%CC%80_13.16.29.png";
         const work0 = "https://res.cloudinary.com/dw7nokc0j/image/upload/v1567156514/Responsive_Web_Design_Demo_Template_2.png";
         const work1 = "https://res.cloudinary.com/dw7nokc0j/image/upload/c_scale,w_500/v1563785381/Responsive_Web_Design_Demo_Template.png";
@@ -234,7 +243,7 @@
         let getwork3 = document.querySelector("#work3");
         bgElement.classList.add("loading");
         let preloaderImg = document.createElement("img");
-        preloaderImg.src = imageUrl;
+        preloaderImg.src = avatarUrl;
 
         preloaderImg.addEventListener('load', (event) => {
           bgElement.classList.remove("loading");
@@ -246,17 +255,6 @@
           getwork3.src = work3;
           preloaderImg = null;
         });
-    </script>
-    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566909799/init.js"></script>
-    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676807/Chart.js"></script>
-    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1553676857/copy.js" defer></script>
-    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566079372/parallaxScroll.js" defer></script>
-    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1566927104/shoWidget.js"></script>
-    <script src="https://res.cloudinary.com/dw7nokc0j/raw/upload/v1554125262/scroll.js" defer></script>
-    <!-- <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=261&f=1"></script> -->
-    <!-- <script charset='UTF-8' src='http://www.meteofrance.com/mf3-rpc-portlet/rest/vignettepartenaire/751010/type/VILLE_FRANCE/size/PORTRAIT_VIGNETTE' type='text/javascript'></script> -->
-    <script>
-
     </script>
     </div>
   </body>
